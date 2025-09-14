@@ -1,5 +1,5 @@
 # Función para dar de alta un libro
-def alta_libro():
+def alta_libro(biblioteca):
     titulo = input("Título Del Libro: ")
     autor = input("Autor: ")
     genero = input("Género Literario: ")
@@ -25,18 +25,3 @@ def alta_libro():
 
     biblioteca.append(nuevo)
     print("Libro agregado.")
-
-# Función principal para probar el alta de libros
-def main():
-    while True:
-        alta_libro()
-        opcion = input("¿Desea agregar otro libro? (s/n): ")
-        if opcion == "s" or opcion == "n":
-            continue
-        else:
-            break
-    for libro in biblioteca:
-        print(libro)
-biblioteca = []
-
-main()

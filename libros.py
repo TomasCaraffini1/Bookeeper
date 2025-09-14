@@ -19,17 +19,18 @@ def listar_libros(biblioteca):
 
     # Valido el ancho necesario para el listado
     for fila in biblioteca:
-        if len(fila[0]) > titulo_width:
-            titulo_width = len(fila[0])
-        if len(fila[1]) > autor_width:
-            autor_width = len(fila[1])
-        if len(fila[2]) > genero_width:
-            genero_width = len(fila[2])
-        if len(str(fila[3])) > anio_width:
-            anio_width = len(str(fila[3]))
-        if len(fila[4]) > estado_width:
-            estado_width = len(fila[4])
+        if len(fila["titulo"]) > titulo_width:
+            titulo_width = len(fila["titulo"])
+        if len(fila["autor"]) > autor_width:
+            autor_width = len(fila["autor"])
+        if len(fila["genero"]) > genero_width:
+            genero_width = len(fila["genero"])
+        if len(str(fila["año"])) > anio_width:
+            anio_width = len(str(fila["año"]))
+        if len(fila["estado"]) > estado_width:
+            estado_width = len(fila["estado"])
 
+    
 
     # Encabezado
     print()
@@ -38,6 +39,13 @@ def listar_libros(biblioteca):
     
     # Filas
     for fila in biblioteca:
-        print( fila[0].ljust(titulo_width) + " " + fila[1].ljust(autor_width) + " " + fila[2].ljust(genero_width) + " " + str(fila[3]).ljust(anio_width) + " " +
-            fila[4].ljust(estado_width) )
+        print(
+            fila["titulo"].ljust(titulo_width) + " " +
+            fila["autor"].ljust(autor_width) + " " +
+            fila["genero"].ljust(genero_width) + " " +
+            str(fila["año"]).ljust(anio_width) + " " +
+            fila["estado"].ljust(estado_width)
+        )
     print()
+
+
