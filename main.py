@@ -1,5 +1,6 @@
 from libros.alta import alta_libro
 from libros.lista import listar_libros
+from libros.busca import buscar_libro
 
 def mostrar_menu():
     """
