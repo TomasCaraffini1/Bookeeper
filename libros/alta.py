@@ -1,6 +1,7 @@
 import re
 from datetime import datetime
 
+
 # Patrones para REGEX
 RX_TITULO   = re.compile(r"^[A-Za-z0-9ÁÉÍÓÚÜÑáéíóúüñ ,.'-]+$")   # Títulos: mayusculas, minusculas, números, acentos, dieresis, eñes, espacios, etc.
 RX_AUTOR    = re.compile(r"^[A-Za-zÁÉÍÓÚÜÑáéíóúüñ .,'-]+$")      # Autor: mayusculas, minusculas, acentos, dieresis, eñes, espacios, etc.
@@ -8,7 +9,6 @@ RX_GENERO   = re.compile(r"^[A-Za-zÁÉÍÓÚÜÑáéíóúüñ ]+$")          #
 RX_ANIO     = re.compile(r"^\d{1,4}$")                           # 1-4 dígitos (Solo Libros D.C).
 
 
-#    ¡¡¡ FUNCION OK !!!
 def ingresar(msj, normalizar, validar, transformar, error_msj="Valor inválido."):
     # Bucle generico de entrada, normaliza, valida y transforma en caso de ser necesario
     while True:
@@ -32,7 +32,6 @@ def ingresar(msj, normalizar, validar, transformar, error_msj="Valor inválido."
     
 
 # Funciones específicas
-#    ¡¡¡ FUNCION OK !!!
 def pedir_titulo():
     return ingresar(
         "Título Del Libro: ",
@@ -43,7 +42,6 @@ def pedir_titulo():
     )
 
 
-#    ¡¡¡ FUNCION OK !!!
 def pedir_autor():
     return ingresar(
         "Autor Del Libro: ",
@@ -54,7 +52,6 @@ def pedir_autor():
     )
 
 
-#    ¡¡¡ FUNCION OK !!!
 def pedir_genero():
     return ingresar(
         "Género Literario: ",
@@ -65,7 +62,6 @@ def pedir_genero():
     )
 
 
-#    ¡¡¡ FUNCION OK !!!
 def pedir_anio_dc():
     anio_actual = datetime.now().year
     def _validar(s: str) -> bool:
@@ -82,7 +78,6 @@ def pedir_anio_dc():
     )
 
 
-#    ¡¡¡ FUNCION OK !!!
 def existe_duplicado(biblioteca, titulo, autor):
     # Valida duplicados, devuelve un Booleano
 
@@ -91,7 +86,6 @@ def existe_duplicado(biblioteca, titulo, autor):
     return any(libro["titulo"].strip().lower() == tittle and libro["autor"].strip().lower() == author for libro in biblioteca)
 
 
-#    ¡¡¡ FUNCION OK !!!
 def alta_libro(biblioteca):
     # Orquestador para la carga de libros
 
