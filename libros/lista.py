@@ -1,4 +1,3 @@
-#    ¡¡¡ FUNCION OK !!!
 def listar_libros(biblioteca):
     # Muestra por pantalla la lista de libros
 
