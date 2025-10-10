@@ -9,10 +9,10 @@ RX_ANIO     = re.compile(r"^\d{1,4}$")                           # 1-4 dígitos 
 
 
 #    ¡¡¡ FUNCION OK !!!
-def ingresar(prompt, normalizar, validar, transformar, error_msg="Valor inválido."):
+def ingresar(msj, normalizar, validar, transformar, error_msj="Valor inválido."):
     # Bucle generico de entrada, normaliza, valida y transforma en caso de ser necesario
     while True:
-        valor = input(prompt)
+        valor = input(msj)
 
         # Valida si necesito normalizar
         valor = valor.strip() if normalizar else valor
@@ -24,7 +24,7 @@ def ingresar(prompt, normalizar, validar, transformar, error_msg="Valor inválid
         
         # Valida el input
         if validar and not validar(valor):
-            print(error_msg)
+            print(error_msj)
             continue
 
         # Valida y devuelve el tipo del input
@@ -39,7 +39,7 @@ def pedir_titulo():
         normalizar=True,
         validar=lambda s: bool(RX_TITULO.match(s)),
         transformar=False,
-        error_msg="Título inválido: use letras, números, espacios y . , ' -",
+        error_msj="Título inválido: use letras, números, espacios y . , ' -",
     )
 
 
@@ -50,7 +50,7 @@ def pedir_autor():
         normalizar=True,
         validar=lambda s: bool(RX_AUTOR.match(s)),
         transformar=False,
-        error_msg="Autor inválido: use solo letras, espacios y . , ' -",
+        error_msj="Autor inválido: use solo letras, espacios y . , ' -",
     )
 
 
@@ -61,7 +61,7 @@ def pedir_genero():
         normalizar=True,
         validar=lambda s: bool(RX_GENERO.match(s)),
         transformar=False,
-        error_msg="Género inválido: use solo letras y espacios.",
+        error_msj="Género inválido: use solo letras y espacios.",
     )
 
 
@@ -78,7 +78,7 @@ def pedir_anio_dc():
         normalizar=True,
         validar=_validar,
         transformar=int,
-        error_msg=f"Año inválido: entre 1 y {datetime.now().year}."
+        error_msj=f"Año inválido: entre 1 y {datetime.now().year}."
     )
 
 
