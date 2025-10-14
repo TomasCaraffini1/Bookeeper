@@ -1,5 +1,8 @@
-from libros import listar_libros
-from AltaDeLibros import alta_libro
+from libros.alta import alta_libro
+from libros.lista import listar_libros
+from libros.busca import buscar_libro
+from libros.alquiler import prestar_libro, devolver_libro
+
 
 def mostrar_menu():
     """
