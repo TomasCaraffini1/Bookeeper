@@ -1,0 +1,779 @@
+[
+    {
+        "Título": "Cien Años de Soledad",
+        "Autor": "Gabriel García Márquez",
+        "Género": "Realismo Mágico",
+        "Año": 1967,
+        "Estado": "Disponible"
+    },
+    {
+        "Título": "1984",
+        "Autor": "George Orwell",
+        "Género": "Distopía",
+        "Año": 1949,
+        "Estado": "Alquilado"
+    },
+    {
+        "Título": "Don Quijote de la Mancha",
+        "Autor": "Miguel de Cervantes",
+        "Género": "Novela",
+        "Año": 1605,
+        "Estado": "Disponible"
+    },
+    {
+        "Título": "Rayuela",
+        "Autor": "Julio Cortázar",
+        "Género": "Experimental",
+        "Año": 1963,
+        "Estado": "Disponible"
+    },
+    {
+        "Título": "La Ciudad y los Perros",
+        "Autor": "Mario Vargas Llosa",
+        "Género": "Novela",
+        "Año": 1963,
+        "Estado": "Alquilado"
+    },
+    {
+        "Título": "El Nombre de la Rosa",
+        "Autor": "Umberto Eco",
+        "Género": "Misterio Histórico",
+        "Año": 1980,
+        "Estado": "Disponible"
+    },
+    {
+        "Título": "Crimen y Castigo",
+        "Autor": "Fiódor Dostoyevski",
+        "Género": "Filosófica",
+        "Año": 1866,
+        "Estado": "Disponible"
+    },
+    {
+        "Título": "El Gran Gatsby",
+        "Autor": "F. Scott Fitzgerald",
+        "Género": "Clásico Moderno",
+        "Año": 1925,
+        "Estado": "Alquilado"
+    },
+    {
+        "Título": "Matar a un Ruiseñor",
+        "Autor": "Harper Lee",
+        "Género": "Ficción Social",
+        "Año": 1960,
+        "Estado": "Disponible"
+    },
+    {
+        "Título": "Orgullo y Prejuicio",
+        "Autor": "Jane Austen",
+        "Género": "Romance Clásico",
+        "Año": 1813,
+        "Estado": "Disponible"
+    },
+    {
+        "Título": "El Hobbit",
+        "Autor": "J.R.R. Tolkien",
+        "Género": "Fantasía",
+        "Año": 1937,
+        "Estado": "Alquilado"
+    },
+    {
+        "Título": "Guerra y Paz",
+        "Autor": "León Tolstói",
+        "Género": "Novela Histórica",
+        "Año": 1869,
+        "Estado": "Disponible"
+    },
+    {
+        "Título": "Hamlet",
+        "Autor": "William Shakespeare",
+        "Género": "Tragedia",
+        "Año": 1603,
+        "Estado": "Disponible"
+    },
+    {
+        "Título": "Frankenstein",
+        "Autor": "Mary Shelley",
+        "Género": "Ciencia Ficción Clásica",
+        "Año": 1818,
+        "Estado": "Alquilado"
+    },
+    {
+        "Título": "Drácula",
+        "Autor": "Bram Stoker",
+        "Género": "Terror Gótico",
+        "Año": 1897,
+        "Estado": "Disponible"
+    },
+    {
+        "Título": "Las Aventuras de Tom Sawyer",
+        "Autor": "Mark Twain",
+        "Género": "Juvenil",
+        "Año": 1876,
+        "Estado": "Disponible"
+    },
+    {
+        "Título": "El Retrato de Dorian Gray",
+        "Autor": "Oscar Wilde",
+        "Género": "Filosófica",
+        "Año": 1890,
+        "Estado": "Disponible"
+    },
+    {
+        "Título": "Alicia en el País de las Maravillas",
+        "Autor": "Lewis Carroll",
+        "Género": "Fantasía",
+        "Año": 1865,
+        "Estado": "Alquilado"
+    },
+    {
+        "Título": "Veinte Mil Leguas de Viaje Submarino",
+        "Autor": "Julio Verne",
+        "Género": "Aventura",
+        "Año": 1870,
+        "Estado": "Disponible"
+    },
+    {
+        "Título": "La Vuelta al Mundo en Ochenta Días",
+        "Autor": "Julio Verne",
+        "Género": "Aventura",
+        "Año": 1873,
+        "Estado": "Disponible"
+    },
+    {
+        "Título": "El Principito",
+        "Autor": "Antoine de Saint-Exupéry",
+        "Género": "Fábula",
+        "Año": 1943,
+        "Estado": "Disponible"
+    },
+    {
+        "Título": "La Metamorfosis",
+        "Autor": "Franz Kafka",
+        "Género": "Ficción",
+        "Año": 1915,
+        "Estado": "Alquilado"
+    },
+    {
+        "Título": "Madame Bovary",
+        "Autor": "Gustave Flaubert",
+        "Género": "Realismo",
+        "Año": 1856,
+        "Estado": "Disponible"
+    },
+    {
+        "Título": "Los Miserables",
+        "Autor": "Victor Hugo",
+        "Género": "Novela Social",
+        "Año": 1862,
+        "Estado": "Disponible"
+    },
+    {
+        "Título": "Jane Eyre",
+        "Autor": "Charlotte Brontë",
+        "Género": "Gótico",
+        "Año": 1847,
+        "Estado": "Disponible"
+    },
+    {
+        "Título": "Cumbres Borrascosas",
+        "Autor": "Emily Brontë",
+        "Género": "Romance Gótico",
+        "Año": 1847,
+        "Estado": "Alquilado"
+    },
+    {
+        "Título": "Un Mundo Feliz",
+        "Autor": "Aldous Huxley",
+        "Género": "Distopía",
+        "Año": 1932,
+        "Estado": "Disponible"
+    },
+    {
+        "Título": "Fahrenheit 451",
+        "Autor": "Ray Bradbury",
+        "Género": "Ciencia Ficción",
+        "Año": 1953,
+        "Estado": "Disponible"
+    },
+    {
+        "Título": "Siddhartha",
+        "Autor": "Hermann Hesse",
+        "Género": "Filosófica",
+        "Año": 1922,
+        "Estado": "Disponible"
+    },
+    {
+        "Título": "El Lobo Estepario",
+        "Autor": "Hermann Hesse",
+        "Género": "Novela",
+        "Año": 1927,
+        "Estado": "Alquilado"
+    },
+    {
+        "Título": "Ulises",
+        "Autor": "James Joyce",
+        "Género": "Modernismo",
+        "Año": 1922,
+        "Estado": "Disponible"
+    },
+    {
+        "Título": "El Viejo y el Mar",
+        "Autor": "Ernest Hemingway",
+        "Género": "Clásico",
+        "Año": 1952,
+        "Estado": "Disponible"
+    },
+    {
+        "Título": "Las Uvas de la Ira",
+        "Autor": "John Steinbeck",
+        "Género": "Realismo Social",
+        "Año": 1939,
+        "Estado": "Disponible"
+    },
+    {
+        "Título": "De Ratones y Hombres",
+        "Autor": "John Steinbeck",
+        "Género": "Tragedia",
+        "Año": 1937,
+        "Estado": "Alquilado"
+    },
+    {
+        "Título": "El Extraño Caso del Dr. Jekyll y Mr. Hyde",
+        "Autor": "Robert Louis Stevenson",
+        "Género": "Novela Gótica",
+        "Año": 1886,
+        "Estado": "Disponible"
+    },
+    {
+        "Título": "La Isla del Tesoro",
+        "Autor": "Robert Louis Stevenson",
+        "Género": "Aventura",
+        "Año": 1883,
+        "Estado": "Disponible"
+    },
+    {
+        "Título": "El Conde de Montecristo",
+        "Autor": "Alexandre Dumas",
+        "Género": "Aventura",
+        "Año": 1844,
+        "Estado": "Disponible"
+    },
+    {
+        "Título": "Los Tres Mosqueteros",
+        "Autor": "Alexandre Dumas",
+        "Género": "Aventura",
+        "Año": 1844,
+        "Estado": "Alquilado"
+    },
+    {
+        "Título": "El Padrino",
+        "Autor": "Mario Puzo",
+        "Género": "Novela Negra",
+        "Año": 1969,
+        "Estado": "Disponible"
+    },
+    {
+        "Título": "IT (Eso)",
+        "Autor": "Stephen King",
+        "Género": "Terror",
+        "Año": 1986,
+        "Estado": "Disponible"
+    },
+    {
+        "Título": "Carrie",
+        "Autor": "Stephen King",
+        "Género": "Terror",
+        "Año": 1974,
+        "Estado": "Disponible"
+    },
+    {
+        "Título": "El Código Da Vinci",
+        "Autor": "Dan Brown",
+        "Género": "Thriller",
+        "Año": 2003,
+        "Estado": "Alquilado"
+    },
+    {
+        "Título": "El Perfume",
+        "Autor": "Patrick Süskind",
+        "Género": "Ficción Histórica",
+        "Año": 1985,
+        "Estado": "Disponible"
+    },
+    {
+        "Título": "La Sombra del Viento",
+        "Autor": "Carlos Ruiz Zafón",
+        "Género": "Misterio",
+        "Año": 2001,
+        "Estado": "Disponible"
+    },
+    {
+        "Título": "La Casa de los Espíritus",
+        "Autor": "Isabel Allende",
+        "Género": "Realismo Mágico",
+        "Año": 1982,
+        "Estado": "Disponible"
+    },
+    {
+        "Título": "Ensayo sobre la Ceguera",
+        "Autor": "José Saramago",
+        "Género": "Alegoría",
+        "Año": 1995,
+        "Estado": "Alquilado"
+    },
+    {
+        "Título": "El Psicoanalista",
+        "Autor": "John Katzenbach",
+        "Género": "Thriller Psicológico",
+        "Año": 2002,
+        "Estado": "Disponible"
+    },
+    {
+        "Título": "El Nombre del Viento",
+        "Autor": "Patrick Rothfuss",
+        "Género": "Fantasía Épica",
+        "Año": 2007,
+        "Estado": "Disponible"
+    },
+    {
+        "Título": "Juego de Tronos",
+        "Autor": "George R.R. Martin",
+        "Género": "Fantasía Épica",
+        "Año": 1996,
+        "Estado": "Disponible"
+    },
+    {
+        "Título": "El Último Deseo (Geralt de Rivia)",
+        "Autor": "Andrzej Sapkowski",
+        "Género": "Fantasía",
+        "Año": 1993,
+        "Estado": "Alquilado"
+    },
+    {
+        "Título": "Dune",
+        "Autor": "Frank Herbert",
+        "Género": "Ciencia Ficción",
+        "Año": 1965,
+        "Estado": "Disponible"
+    },
+    {
+        "Título": "Yo, Robot",
+        "Autor": "Isaac Asimov",
+        "Género": "Ciencia Ficción",
+        "Año": 1950,
+        "Estado": "Disponible"
+    },
+    {
+        "Título": "Fundación",
+        "Autor": "Isaac Asimov",
+        "Género": "Ciencia Ficción",
+        "Año": 1951,
+        "Estado": "Disponible"
+    },
+    {
+        "Título": "Neuromante",
+        "Autor": "William Gibson",
+        "Género": "Cyberpunk",
+        "Año": 1984,
+        "Estado": "Alquilado"
+    },
+    {
+        "Título": "El Resplandor",
+        "Autor": "Stephen King",
+        "Género": "Terror",
+        "Año": 1977,
+        "Estado": "Disponible"
+    },
+    {
+        "Título": "La Chica del Tren",
+        "Autor": "Paula Hawkins",
+        "Género": "Misterio",
+        "Año": 2015,
+        "Estado": "Disponible"
+    },
+    {
+        "Título": "Perdida",
+        "Autor": "Gillian Flynn",
+        "Género": "Thriller",
+        "Año": 2012,
+        "Estado": "Disponible"
+    },
+    {
+        "Título": "El Silencio de los Corderos",
+        "Autor": "Thomas Harris",
+        "Género": "Thriller",
+        "Año": 1988,
+        "Estado": "Alquilado"
+    },
+    {
+        "Título": "El Alquimista",
+        "Autor": "Paulo Coelho",
+        "Género": "Ficción",
+        "Año": 1988,
+        "Estado": "Disponible"
+    },
+    {
+        "Título": "El Guardián entre el Centeno",
+        "Autor": "J.D. Salinger",
+        "Género": "Ficción Juvenil",
+        "Año": 1951,
+        "Estado": "Disponible"
+    },
+    {
+        "Título": "Sapiens: De animales a dioses",
+        "Autor": "Yuval Noah Harari",
+        "Género": "No Ficción",
+        "Año": 2011,
+        "Estado": "Disponible"
+    },
+    {
+        "Título": "Una Breve Historia del Tiempo",
+        "Autor": "Stephen Hawking",
+        "Género": "Ciencia",
+        "Año": 1988,
+        "Estado": "Alquilado"
+    },
+    {
+        "Título": "Cosmos",
+        "Autor": "Carl Sagan",
+        "Género": "Ciencia",
+        "Año": 1980,
+        "Estado": "Disponible"
+    },
+    {
+        "Título": "La Carretera",
+        "Autor": "Cormac McCarthy",
+        "Género": "Post-apocalíptica",
+        "Año": 2006,
+        "Estado": "Disponible"
+    },
+    {
+        "Título": "Meridiano de Sangre",
+        "Autor": "Cormac McCarthy",
+        "Género": "Western",
+        "Año": 1985,
+        "Estado": "Disponible"
+    },
+    {
+        "Título": "Poeta en Nueva York",
+        "Autor": "Federico García Lorca",
+        "Género": "Poesía",
+        "Año": 1940,
+        "Estado": "Alquilado"
+    },
+    {
+        "Título": "2666",
+        "Autor": "Roberto Bolaño",
+        "Género": "Novela",
+        "Año": 2004,
+        "Estado": "Disponible"
+    },
+    {
+        "Título": "Los Detectives Salvajes",
+        "Autor": "Roberto Bolaño",
+        "Género": "Novela",
+        "Año": 1998,
+        "Estado": "Disponible"
+    },
+    {
+        "Título": "Veinte Poemas de Amor",
+        "Autor": "Pablo Neruda",
+        "Género": "Poesía",
+        "Año": 1924,
+        "Estado": "Disponible"
+    },
+    {
+        "Título": "El Laberinto de la Soledad",
+        "Autor": "Octavio Paz",
+        "Género": "Ensayo",
+        "Año": 1950,
+        "Estado": "Disponible"
+    },
+    {
+        "Título": "Pedro Páramo",
+        "Autor": "Juan Rulfo",
+        "Género": "Realismo Mágico",
+        "Año": 1955,
+        "Estado": "Alquilado"
+    },
+    {
+        "Título": "Ficciones",
+        "Autor": "Jorge Luis Borges",
+        "Género": "Cuentos",
+        "Año": 1944,
+        "Estado": "Disponible"
+    },
+    {
+        "Título": "El Aleph",
+        "Autor": "Jorge Luis Borges",
+        "Género": "Cuentos",
+        "Año": 1949,
+        "Estado": "Disponible"
+    },
+    {
+        "Título": "Historias de Cronopios y de Famas",
+        "Autor": "Julio Cortázar",
+        "Género": "Cuentos Cortos",
+        "Año": 1962,
+        "Estado": "Disponible"
+    },
+    {
+        "Título": "La Tregua",
+        "Autor": "Mario Benedetti",
+        "Género": "Novela",
+        "Año": 1960,
+        "Estado": "Alquilado"
+    },
+    {
+        "Título": "El Túnel",
+        "Autor": "Ernesto Sábato",
+        "Género": "Novela Psicológica",
+        "Año": 1948,
+        "Estado": "Disponible"
+    },
+    {
+        "Título": "El Proceso",
+        "Autor": "Franz Kafka",
+        "Género": "Absurdo",
+        "Año": 1925,
+        "Estado": "Disponible"
+    },
+    {
+        "Título": "El Castillo",
+        "Autor": "Franz Kafka",
+        "Género": "Absurdo",
+        "Año": 1926,
+        "Estado": "Disponible"
+    },
+    {
+        "Título": "Bodas de Sangre",
+        "Autor": "Federico García Lorca",
+        "Género": "Teatro",
+        "Año": 1933,
+        "Estado": "Alquilado"
+    },
+    {
+        "Título": "La Odisea",
+        "Autor": "Homero",
+        "Género": "Épica",
+        "Año": -800,
+        "Estado": "Disponible"
+    },
+    {
+        "Título": "La Ilíada",
+        "Autor": "Homero",
+        "Género": "Épica",
+        "Año": -800,
+        "Estado": "Disponible"
+    },
+    {
+        "Título": "Antígona",
+        "Autor": "Sófocles",
+        "Género": "Tragedia Griega",
+        "Año": -441,
+        "Estado": "Disponible"
+    },
+    {
+        "Título": "Edipo Rey",
+        "Autor": "Sófocles",
+        "Género": "Tragedia Griega",
+        "Año": -429,
+        "Estado": "Alquilado"
+    },
+    {
+        "Título": "Meditaciones",
+        "Autor": "Marco Aurelio",
+        "Género": "Filosofía",
+        "Año": 180,
+        "Estado": "Disponible"
+    },
+    {
+        "Título": "El Arte de la Guerra",
+        "Autor": "Sun Tzu",
+        "Género": "Estrategia",
+        "Año": -500,
+        "Estado": "Disponible"
+    },
+    {
+        "Título": "La Divina Comedia",
+        "Autor": "Dante Alighieri",
+        "Género": "Poesía Épica",
+        "Año": 1320,
+        "Estado": "Disponible"
+    },
+    {
+        "Título": "Decamerón",
+        "Autor": "Giovanni Boccaccio",
+        "Género": "Cuentos",
+        "Año": 1353,
+        "Estado": "Alquilado"
+    },
+    {
+        "Título": "El Príncipe",
+        "Autor": "Nicolás Maquiavelo",
+        "Género": "Ensayo Político",
+        "Año": 1532,
+        "Estado": "Disponible"
+    },
+    {
+        "Título": "Utopía",
+        "Autor": "Tomás Moro",
+        "Género": "Filosofía",
+        "Año": 1516,
+        "Estado": "Disponible"
+    },
+    {
+        "Título": "Los Viajes de Gulliver",
+        "Autor": "Jonathan Swift",
+        "Género": "Sátira",
+        "Año": 1726,
+        "Estado": "Disponible"
+    },
+    {
+        "Título": "Sentido y Sensibilidad",
+        "Autor": "Jane Austen",
+        "Género": "Romance Clásico",
+        "Año": 1811,
+        "Estado": "Disponible"
+    },
+    {
+        "Título": "Ivanhoe",
+        "Autor": "Walter Scott",
+        "Género": "Novela Histórica",
+        "Año": 1819,
+        "Estado": "Alquilado"
+    },
+    {
+        "Título": "Mujercitas",
+        "Autor": "Louisa May Alcott",
+        "Género": "Juvenil",
+        "Año": 1868,
+        "Estado": "Disponible"
+    },
+    {
+        "Título": "Anna Karenina",
+        "Autor": "León Tolstói",
+        "Género": "Realismo",
+        "Año": 1877,
+        "Estado": "Disponible"
+    },
+    {
+        "Título": "La Guerra de los Mundos",
+        "Autor": "H. G. Wells",
+        "Género": "Ciencia Ficción",
+        "Año": 1898,
+        "Estado": "Disponible"
+    },
+    {
+        "Título": "El Llamado de lo Salvaje",
+        "Autor": "Jack London",
+        "Género": "Aventura",
+        "Año": 1903,
+        "Estado": "Alquilado"
+    },
+    {
+        "Título": "El Jardín Secreto",
+        "Autor": "Frances Hodgson Burnett",
+        "Género": "Juvenil",
+        "Año": 1911,
+        "Estado": "Disponible"
+    },
+    {
+        "Título": "Peter Pan",
+        "Autor": "J. M. Barrie",
+        "Género": "Fantasía Juvenil",
+        "Año": 1911,
+        "Estado": "Disponible"
+    },
+    {
+        "Título": "Tarzán de los Monos",
+        "Autor": "Edgar Rice Burroughs",
+        "Género": "Aventura",
+        "Año": 1912,
+        "Estado": "Disponible"
+    },
+    {
+        "Título": "El Castillo de Otranto",
+        "Autor": "Horace Walpole",
+        "Género": "Novela Gótica",
+        "Año": 1764,
+        "Estado": "Disponible"
+    },
+    {
+        "Título": "Las Flores del Mal",
+        "Autor": "Charles Baudelaire",
+        "Género": "Poesía",
+        "Año": 1857,
+        "Estado": "Alquilado"
+    },
+    {
+        "Título": "Rimas y Leyendas",
+        "Autor": "Gustavo Adolfo Bécquer",
+        "Género": "Poesía Romántica",
+        "Año": 1871,
+        "Estado": "Disponible"
+    },
+    {
+        "Título": "La Regenta",
+        "Autor": "Leopoldo Alas Clarín",
+        "Género": "Realismo",
+        "Año": 1884,
+        "Estado": "Disponible"
+    },
+    {
+        "Título": "Fortunata y Jacinta",
+        "Autor": "Benito Pérez Galdós",
+        "Género": "Realismo",
+        "Año": 1887,
+        "Estado": "Disponible"
+    },
+    {
+        "Título": "Niebla",
+        "Autor": "Miguel de Unamuno",
+        "Género": "Novela",
+        "Año": 1914,
+        "Estado": "Disponible"
+    },
+    {
+        "Título": "Platero y Yo",
+        "Autor": "Juan Ramón Jiménez",
+        "Género": "Prosa Lírica",
+        "Año": 1914,
+        "Estado": "Alquilado"
+    },
+    {
+        "Título": "El Árbol de la Ciencia",
+        "Autor": "Pío Baroja",
+        "Género": "Novela",
+        "Año": 1911,
+        "Estado": "Disponible"
+    },
+    {
+        "Título": "Tirano Banderas",
+        "Autor": "Ramón del Valle-Inclán",
+        "Género": "Esperpento",
+        "Año": 1926,
+        "Estado": "Disponible"
+    },
+    {
+        "Título": "La Peste",
+        "Autor": "Albert Camus",
+        "Género": "Existencialismo",
+        "Año": 1947,
+        "Estado": "Disponible"
+    },
+    {
+        "Título": "El Extranjero",
+        "Autor": "Albert Camus",
+        "Género": "Existencialismo",
+        "Año": 1942,
+        "Estado": "Disponible"
+    },
+    {
+        "Título": "El Genio Maligno",
+        "Autor": "René Descartes",
+        "Género": "Filosofía",
+        "Año": 1641,
+        "Estado": "Alquilado"
+    }
+]
