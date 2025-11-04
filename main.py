@@ -25,6 +25,19 @@ def cargar_datos(archivo="datos.json"):
         print(f"⚠️ Advertencia: El archivo '{archivo}' está vacío o malformado. Iniciando con lista vacía.")
         return []
 
+def guardar_datos(libros, archivo="datos.json"):
+    """
+    Guarda la lista de libros (que está en Python) en el archivo JSON.
+    """
+    try:
+        with open(archivo, 'w', encoding='utf-8') as f:
+            # json.dump() convierte la lista de Python a formato JSON y la escribe
+            # indent=4 hace que el archivo JSON sea legible
+            json.dump(libros, f, indent=4) 
+        print(f"✅ Datos guardados exitosamente en '{archivo}'.")
+    except Exception as e:
+        print(f"❌ Error al guardar los datos en '{archivo}': {e}")  
+
 def mostrar_menu():
     """
     Muestra el menú de opciones al usuario.
@@ -72,6 +85,7 @@ def main():
         elif opcion == 5:
             devolver_libro(libros)
         elif opcion == 6:
+            guardar_datos(libros, "datos.json")
             print("Gracias por utilizar Bookeeper!👋")
             break
 

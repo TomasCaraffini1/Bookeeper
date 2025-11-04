@@ -83,27 +83,29 @@ def existe_duplicado(biblioteca, titulo, autor):
 
     tittle = titulo.lower()
     author = autor.lower()
-    return any(libro["titulo"].strip().lower() == tittle and libro["autor"].strip().lower() == author for libro in biblioteca)
+    return any(libro["Título"].strip().lower() == tittle and libro["Autor"].strip().lower() == author for libro in biblioteca)
 
 
 def alta_libro(biblioteca):
     # Orquestador para la carga de libros
 
-    titulo = pedir_titulo()
-    autor  = pedir_autor()
+    Título = pedir_titulo()
+    Autor  = pedir_autor()
     genero = pedir_genero()
     anio   = pedir_anio_dc()
 
-    if existe_duplicado(biblioteca, titulo, autor):
+    if existe_duplicado(biblioteca, Título, Autor):
         print("El libro ya existe (mismo título y autor).")
         return
 
     nuevo = {
-        "titulo": titulo,
-        "autor": autor,
-        "genero": genero,
-        "año": anio,
-        "estado": "Disponible",
+        "Título": Título,
+        "Autor": Autor,
+        "Género": genero,
+        "Año": anio,
+        "Estado": "Disponible",
     }
     biblioteca.append(nuevo)
-    print("Libro agregado.")
+    print ("\n")
+    print("Libro agregado ✅")
+    print ("\n")
