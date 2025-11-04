@@ -1,8 +1,29 @@
+import json
+import os
 from libros.alta import alta_libro
 from libros.lista import listar_libros
 from libros.busca import buscar_libro
 from libros.alquiler import prestar_libro, devolver_libro
 
+def cargar_datos(archivo="datos.json"):
+    """
+    Carga la lista de libros desde el archivo JSON especificado.
+    """
+    # Verifica si el archivo existe
+    if not os.path.exists(archivo):
+        print(f"⚠️ Advertencia: No se encontró '{archivo}'. Se creará uno nuevo al salir.")
+        return []  # Retorna una lista vacía si el archivo no existe
+
+    try:
+        with open(archivo, 'r', encoding='utf-8') as f:
+            # json.load() lee el archivo y convierte el JSON a una lista de Python
+            datos = json.load(f)
+            return datos
+            
+    except json.JSONDecodeError:
+        # Esto pasa si el archivo JSON está vacío o corrupto
+        print(f"⚠️ Advertencia: El archivo '{archivo}' está vacío o malformado. Iniciando con lista vacía.")
+        return []
 
 def mostrar_menu():
     """
@@ -33,8 +54,9 @@ def elegir_opcion():
 
 def main():
     # lista global de los libros
-    libros = []
-    
+    libros = cargar_datos("datos.json")
+    print(f"\nSistema iniciado. Se cargaron {len(libros)} libros desde datos.json.")
+
     while True:
         mostrar_menu()
         opcion = elegir_opcion()
