@@ -45,38 +45,53 @@ def listar_coincidencias(resultados):
 
 
 def elegir_de_lista(resultados):
-    # Muestra las posibles coincidencias 
-     
-     
-    if len(resultados) == 1:
-        return 0
-
+# Muestra las posibles coincidencias
     print("\nCoincidencias encontradas:")
     listar_coincidencias(resultados)
-    
-    # Valida la seleccion y devuelve el indice de la misma
+ 
+# Si la lista de resultados está vacía, no hay nada que elegir.
+# Devolvemos None para que la función que llamó (prestar/devolver) sepa que no se seleccionó nada.
+    if not resultados:
+        return None
+
+    if len(resultados) == 1:
+        print("Se encontró 1 coincidencia, seleccionada automáticamente.")
+        return 0
+
+# Valida la seleccion y devuelve el indice de la misma
     while True:
-        seleccion = input(f"Elija 1-{len(resultados)}: ").strip()
+# Agregamos la opción "0 para cancelar" para evitar bucles
+
+        seleccion = input(f"Elija 1-{len(resultados)} (o 0 para cancelar): ").strip()
+
+        if seleccion == '0':
+            print("Operación cancelada.")
+            return None # Devolvemos None también si el usuario cancela
+
         if seleccion.isdigit():
             indice = int(seleccion)
             if 1 <= indice <= len(resultados):
-                return indice - 1
+                return indice - 1 # Devolvemos el índice (basado en 0)
         print("Selección inválida.")
 
 
 # Funciones específicas
 def prestar_libro(biblioteca):
-    # Presta un libro y modifica su estado
+# Presta un libro y modifica su estado
 
     if not biblioteca:
         print("\nNo hay libros cargados.")
-        return 
-     
+        return
+
     resultados = pedir_y_filtrar(biblioteca)
-
     indice = elegir_de_lista(resultados)
-    libro = resultados[indice]
 
+# Si el índice es None (porque no hubo resultados o se canceló),
+# detenemos la función aquí y volvemos al menú.
+    if indice is None:
+        return
+
+    libro = resultados[indice]
     # Valida que este Disponible
     if libro.get("estado", "").lower() != "disponible".lower():
         print(f"\nNo se puede prestar. Estado actual: {libro.get('estado', '')}")
@@ -88,18 +103,22 @@ def prestar_libro(biblioteca):
 
 
 def devolver_libro(biblioteca):
-    # Devuelve un libro y modifica su estado
+# Devuelve un libro y modifica su estado
 
     if not biblioteca:
         print("\nNo hay libros cargados.")
-        return 
+        return
 
     resultados = pedir_y_filtrar(biblioteca)
-
     indice = elegir_de_lista(resultados)
+
+# Aplicamos la misma validación que en prestar_libro
+    if indice is None:
+        return
+
     libro = resultados[indice]
 
-    # Valida que este Alquilado
+# Valida que este Alquilado
     if libro.get("estado", "").lower() != "alquilado".lower():
         print(f"\nNo se puede devolver. Estado actual: {libro.get('estado', '')}")
         return
