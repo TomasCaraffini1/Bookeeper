@@ -86,7 +86,9 @@ def main():
             devolver_libro(libros)
         elif opcion == 6:
             guardar_datos(libros, "datos.json")
+            print("\n")
             print("Gracias por utilizar Bookeeper!👋")
+            print("\n")
             break
 
 ####################################### Programa Principal ##############################

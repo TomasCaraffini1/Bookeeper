@@ -3,7 +3,7 @@ def listar_libros(biblioteca):
 
     if not biblioteca:
         print("\n")
-        print("\nNo hay libros cargados. ❌")
+        print("\nNo hay libros para mostrar. ❌")
         print("\n")
         return
 

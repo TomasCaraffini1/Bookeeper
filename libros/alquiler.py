@@ -57,13 +57,14 @@ def elegir_de_lista(resultados):
         return None
 
     if len(resultados) == 1:
-        print("Se encontró 1 coincidencia, seleccionada automáticamente.")
+        print("\n")
+        print("Se encontró 1 coincidencia, seleccionada automáticamente 🎯.")
         return 0
 
 # Valida la seleccion y devuelve el indice de la misma
     while True:
 # Agregamos la opción "0 para cancelar" para evitar bucles
-
+        print("\n")
         seleccion = input(f"Elija 1-{len(resultados)} (o 0 para cancelar): ").strip()
 
         if seleccion == '0':
@@ -74,7 +75,7 @@ def elegir_de_lista(resultados):
             indice = int(seleccion)
             if 1 <= indice <= len(resultados):
                 return indice - 1 # Devolvemos el índice (basado en 0)
-        print("Selección inválida.")
+        print(f"Selección inválida. Ingrese un número entre 1 y {len(resultados)}.")
 
 
 # Funciones específicas
@@ -104,6 +105,7 @@ def prestar_libro(biblioteca):
     libro["Estado"] = "Alquilado"
     print("\n✅ Préstamo registrado. Libro actualizado:")
     listar_libros([libro])
+    print("\n")
 
 
 def devolver_libro(biblioteca):

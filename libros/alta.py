@@ -45,7 +45,7 @@ def pedir_titulo():
 
 def pedir_autor():
     return ingresar(
-        "✍️ Autor Del Libro: ",
+        "✍️  Autor Del Libro: ",
         normalizar=True,
         validar=lambda s: bool(RX_AUTOR.match(s)),
         transformar=False,
@@ -96,7 +96,7 @@ def alta_libro(biblioteca):
     anio   = pedir_anio_dc()
 
     if existe_duplicado(biblioteca, Título, Autor):
-        print("El libro ya existe (mismo título y autor).")
+        print("Este libro ya está registrado (mismo título y autor).")
         return
 
     nuevo = {
