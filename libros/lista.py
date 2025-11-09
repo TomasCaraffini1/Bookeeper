@@ -2,7 +2,9 @@ def listar_libros(biblioteca):
     # Muestra por pantalla la lista de libros
 
     if not biblioteca:
-        print("\nNo hay libros cargados.")
+        print("\n")
+        print("\nNo hay libros cargados. ❌")
+        print("\n")
         return
 
     encabezado = ["Título", "Autor", "Género", "Año", "Estado"]

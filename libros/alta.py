@@ -33,8 +33,9 @@ def ingresar(msj, normalizar, validar, transformar, error_msj="Valor inválido."
 
 # Funciones específicas
 def pedir_titulo():
+    print("\n")
     return ingresar(
-        "Título Del Libro: ",
+        "🔍 Título Del Libro: ",
         normalizar=True,
         validar=lambda s: bool(RX_TITULO.match(s)),
         transformar=False,
@@ -44,7 +45,7 @@ def pedir_titulo():
 
 def pedir_autor():
     return ingresar(
-        "Autor Del Libro: ",
+        "✍️ Autor Del Libro: ",
         normalizar=True,
         validar=lambda s: bool(RX_AUTOR.match(s)),
         transformar=False,
@@ -54,7 +55,7 @@ def pedir_autor():
 
 def pedir_genero():
     return ingresar(
-        "Género Literario: ",
+        "🧩 Género Literario: ",
         normalizar=True,
         validar=lambda s: bool(RX_GENERO.match(s)),
         transformar=False,
@@ -70,7 +71,7 @@ def pedir_anio_dc():
         n = int(s)
         return 1 <= n <= anio_actual
     return ingresar(
-        "Año - D.C.: ",
+        "📅 Año - D.C.: ",
         normalizar=True,
         validar=_validar,
         transformar=int,

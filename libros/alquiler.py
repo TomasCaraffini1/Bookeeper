@@ -6,7 +6,8 @@ def listar_coincidencias(resultados):
     # Muestra por pantalla la lista de coincidencias con un índice al inicio
 
     if not resultados:
-        print("\nNo hay coincidencias.")
+        print("\nNo hay coincidencias. ❌")
+        print("\n")
         return
 
     # Encabezados (agregamos la columna de índice "#")
@@ -47,6 +48,7 @@ def listar_coincidencias(resultados):
 def elegir_de_lista(resultados):
 # Muestra las posibles coincidencias
     print("\nCoincidencias encontradas:")
+    print("--------------------------")
     listar_coincidencias(resultados)
  
 # Si la lista de resultados está vacía, no hay nada que elegir.
