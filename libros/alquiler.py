@@ -15,9 +15,9 @@ def listar_coincidencias(resultados):
 
     # Anchos dinámicos (mismo criterio que listar_libros) + índice
     indice_w = len(str(len(resultados)))
-    titulo_w = max(len(encabezado[1]), *(len(f["titulo"]) for f in resultados))
-    autor_w  = max(len(encabezado[2]), *(len(f["autor"])  for f in resultados))
-    genero_w = max(len(encabezado[3]), *(len(f["genero"]) for f in resultados))
+    titulo_w = max(len(encabezado[1]), *(len(f["Título"]) for f in resultados))
+    autor_w  = max(len(encabezado[2]), *(len(f["Autor"])  for f in resultados))
+    genero_w = max(len(encabezado[3]), *(len(f["Género"]) for f in resultados))
     anio_w   = 4
     estado_w = 10
 
@@ -35,11 +35,11 @@ def listar_coincidencias(resultados):
     for i, f in enumerate(resultados, start=1):
         print(
             f"| {str(i).ljust(indice_w)}  | "
-            f"{f['titulo'].ljust(titulo_w)}  | "
-            f"{f['autor'].ljust(autor_w)}  | "
-            f"{f['genero'].ljust(genero_w)}  | "
-            f"{str(f['año']).ljust(anio_w)}  | "
-            f"{f['estado'].ljust(estado_w)}  |"
+            f"{f['Título'].ljust(titulo_w)}  | "
+            f"{f['Autor'].ljust(autor_w)}  | "
+            f"{f['Género'].ljust(genero_w)}  | "
+            f"{str(f['Año']).ljust(anio_w)}  | "
+            f"{f['Estado'].ljust(estado_w)}  |"
         )
 
     separador(largo)
@@ -95,11 +95,12 @@ def prestar_libro(biblioteca):
 
     libro = resultados[indice]
     # Valida que este Disponible
-    if libro.get("estado", "").lower() != "disponible".lower():
-        print(f"\nNo se puede prestar. Estado actual: {libro.get('estado', '')}")
+    if libro.get("Estado", "").lower() != "disponible".lower():
+        print(f"\n❌ No se puede prestar. El libro ya está: {libro.get('Estado', '')}")
+        print("   Solo se pueden prestar libros disponibles.")
         return
 
-    libro["estado"] = "Alquilado"
+    libro["Estado"] = "Alquilado"
     print("\n✅ Préstamo registrado. Libro actualizado:")
     listar_libros([libro])
 
@@ -121,10 +122,10 @@ def devolver_libro(biblioteca):
     libro = resultados[indice]
 
 # Valida que este Alquilado
-    if libro.get("estado", "").lower() != "alquilado".lower():
-        print(f"\nNo se puede devolver. Estado actual: {libro.get('estado', '')}")
+    if libro.get("Estado", "").lower() != "alquilado".lower():
+        print(f"\nNo se puede devolver. Estado actual: {libro.get('Estado', '')}")
         return
 
-    libro["estado"] = "Disponible"
+    libro["Estado"] = "Disponible"
     print("\n✅ Devolución registrada. Libro actualizado:")
     listar_libros([libro])
