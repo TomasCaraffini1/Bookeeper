@@ -62,5 +62,9 @@ def buscar_libro(biblioteca):
 
     resultados = pedir_y_filtrar(biblioteca)
 
+    if not resultados:
+        print("\nNo se encontraron resultados. Intente otra búsqueda.")
+        return
+
     # Reusa el mismo formato de impresión
     listar_libros(resultados)

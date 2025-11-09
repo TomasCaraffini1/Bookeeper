@@ -95,9 +95,10 @@ def prestar_libro(biblioteca):
 
     libro = resultados[indice]
     # Valida que este Disponible
-    if libro.get("Estado", "").lower() != "disponible".lower():
-        print(f"\n❌ No se puede prestar. El libro ya está: {libro.get('Estado', '')}")
-        print("   Solo se pueden prestar libros disponibles.")
+    estado_actual = libro.get("Estado", "")
+    if estado_actual.lower() != "disponible".lower():
+        print(f"\nNo se puede prestar. El libro está: {estado_actual}")
+        print("Solo se pueden prestar libros disponibles.")
         return
 
     libro["Estado"] = "Alquilado"
@@ -122,8 +123,10 @@ def devolver_libro(biblioteca):
     libro = resultados[indice]
 
 # Valida que este Alquilado
-    if libro.get("Estado", "").lower() != "alquilado".lower():
-        print(f"\nNo se puede devolver. Estado actual: {libro.get('Estado', '')}")
+    estado_actual = libro.get("Estado", "")
+    if estado_actual.lower() != "alquilado".lower():
+        print(f"\nNo se puede devolver. El libro está: {estado_actual}")
+        print("Solo se pueden devolver libros alquilados.")
         return
 
     libro["Estado"] = "Disponible"
