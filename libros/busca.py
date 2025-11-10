@@ -57,7 +57,7 @@ def buscar_libro(biblioteca):
     # Orquestador para buscar libros
 
     if not biblioteca:
-        print("\nNo hay libros en la biblioteca.")
+        print("\nNo hay libros cargados.")
         return 
 
     resultados = pedir_y_filtrar(biblioteca)
