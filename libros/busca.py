@@ -35,13 +35,18 @@ def pedir_y_filtrar(biblioteca):
     print("2. Autor  (parcial)")
     print("3. Género (exacto)")
     print("4. Año    (exacto)")
+    print("0. Volver al menu principal.")
 
     # Elige criterio
     while True:
-        opcion = input("Seleccione una opción (1-4): ").strip()
+        opcion = input("Seleccione una opción (0-4): ").strip()
+        if opcion == "0":
+            print("\nVolviendo al menu principal.")
+            return None
+        
         if opcion in {"1", "2", "3", "4"}:
             break
-        print("Opción inválida. Ingrese 1, 2, 3 o 4.")
+        print("Opción inválida. Ingrese 0, 1, 2, 3 o 4.")
 
     # Obtiene valor del usuario
     valor = CRITERIOS[opcion]["pedir"]()
@@ -61,6 +66,10 @@ def buscar_libro(biblioteca):
         return 
 
     resultados = pedir_y_filtrar(biblioteca)
+    
+    # Vuelve al menú si el usuario presionó '0' en el sub-menú de búsqueda
+    if resultados is None:
+        return
 
     # Reusa el mismo formato de impresión
     listar_libros(resultados)
