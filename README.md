@@ -35,7 +35,7 @@ Al iniciar vas a ver cuántos libros encontró en `datos.json`. El archivo se ma
 | 3 | Buscar libro | Delega en una misma función los diferentes criterios (título/autor parcial, género/año exactos) y reutiliza la tabla de listado. |
 | 4 | Préstamo | Solo permite alquilar libros cuyo estado es `Disponible`; el usuario elige la coincidencia por índice. |
 | 5 | Devolución | Mismo flujo que el préstamo pero cambiando `Alquilado` → `Disponible`. |
-| 6 | Salir | Guarda el JSON y muestra un mensaje de despedida con emoji, porque ¿por qué no? |
+| 6 | Salir | Guarda el JSON y muestra un mensaje de despedida. |
 
 ## Dataset incluido
 El repo trae un `datos.json` bastante nutrido (novelas clásicas, distopías, etc.) para que pruebes sin cargar nada. Si preferís un catálogo limpio, podés renombrarlo o borrarlo antes de ejecutar y el programa empezará con una lista vacía.
