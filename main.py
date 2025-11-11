@@ -30,7 +30,7 @@ def mostrar_menu():
     Muestra el menú de opciones al usuario.
     """
     print("========================================")
-    print("📚BOOKEEPER")
+    print("📚 BOOKEEPER")
     print("========================================")
     print("1. Alta de libro")
     print("2. Listar libros")
