@@ -553,45 +553,10 @@
         "Estado": "Alquilado"
     },
     {
-        "Título": "La Odisea",
-        "Autor": "Homero",
-        "Género": "Épica",
-        "Año": -800,
-        "Estado": "Disponible"
-    },
-    {
-        "Título": "La Ilíada",
-        "Autor": "Homero",
-        "Género": "Épica",
-        "Año": -800,
-        "Estado": "Disponible"
-    },
-    {
-        "Título": "Antígona",
-        "Autor": "Sófocles",
-        "Género": "Tragedia Griega",
-        "Año": -441,
-        "Estado": "Disponible"
-    },
-    {
-        "Título": "Edipo Rey",
-        "Autor": "Sófocles",
-        "Género": "Tragedia Griega",
-        "Año": -429,
-        "Estado": "Alquilado"
-    },
-    {
         "Título": "Meditaciones",
         "Autor": "Marco Aurelio",
         "Género": "Filosofía",
         "Año": 180,
-        "Estado": "Disponible"
-    },
-    {
-        "Título": "El Arte de la Guerra",
-        "Autor": "Sun Tzu",
-        "Género": "Estrategia",
-        "Año": -500,
         "Estado": "Disponible"
     },
     {
