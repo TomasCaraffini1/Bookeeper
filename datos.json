@@ -553,27 +553,6 @@
         "Estado": "Alquilado"
     },
     {
-        "T\u00edtulo": "La Odisea",
-        "Autor": "Homero",
-        "G\u00e9nero": "\u00c9pica",
-        "A\u00f1o": -800,
-        "Estado": "Disponible"
-    },
-    {
-        "T\u00edtulo": "La Il\u00edada",
-        "Autor": "Homero",
-        "G\u00e9nero": "\u00c9pica",
-        "A\u00f1o": -800,
-        "Estado": "Disponible"
-    },
-    {
-        "T\u00edtulo": "Ant\u00edgona",
-        "Autor": "S\u00f3focles",
-        "G\u00e9nero": "Tragedia Griega",
-        "A\u00f1o": -441,
-        "Estado": "Disponible"
-    },
-    {
         "T\u00edtulo": "Edipo Rey",
         "Autor": "S\u00f3focles",
         "G\u00e9nero": "Tragedia Griega",
@@ -585,13 +564,6 @@
         "Autor": "Marco Aurelio",
         "G\u00e9nero": "Filosof\u00eda",
         "A\u00f1o": 180,
-        "Estado": "Disponible"
-    },
-    {
-        "T\u00edtulo": "El Arte de la Guerra",
-        "Autor": "Sun Tzu",
-        "G\u00e9nero": "Estrategia",
-        "A\u00f1o": -500,
         "Estado": "Disponible"
     },
     {
