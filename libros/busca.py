@@ -6,19 +6,19 @@ from .lista import listar_libros                                          # Reut
 CRITERIOS = {
     "1": {
         "pedir": pedir_titulo,
-        "comparador": lambda libro, q: normalizar(q) in normalizar(libro.get("titulo", "")),
+        "comparador": lambda libro, q: normalizar(q) in normalizar(libro.get("Título", "")),
     },
     "2": {
         "pedir": pedir_autor,
-        "comparador": lambda libro, q: normalizar(q) in normalizar(libro.get("autor", ""))
+        "comparador": lambda libro, q: normalizar(q) in normalizar(libro.get("Autor", ""))
     },
     "3": {
         "pedir": pedir_genero,
-        "comparador": lambda libro, q: normalizar(libro.get("genero", "")) == normalizar(q),
+        "comparador": lambda libro, q: normalizar(libro.get("Género", "")) == normalizar(q),
     },
     "4": {
         "pedir": pedir_anio_dc,
-        "comparador": lambda libro, q: libro.get("año") == q,
+        "comparador": lambda libro, q: libro.get("Año") == q,
     },
 }
 
@@ -71,5 +71,16 @@ def buscar_libro(biblioteca):
     if resultados is None:
         return
 
+    if not resultados:
+        print("\nNo se encontraron resultados. Intente otra búsqueda.")
+        return
+
+    cantidad = len(resultados)
+    if cantidad == 1:
+        print(f"\nSe encontró {cantidad} resultado 🎯:\n")
+    else:
+        print(f"\nSe encontraron {cantidad} resultados 🎯:\n")
+    
     # Reusa el mismo formato de impresión
     listar_libros(resultados)
+    print("\n")
