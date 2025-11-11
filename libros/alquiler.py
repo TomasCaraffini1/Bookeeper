@@ -87,6 +87,11 @@ def prestar_libro(biblioteca):
         return
 
     resultados = pedir_y_filtrar(biblioteca)
+
+# Vuelve al menú si el usuario presionó '0' en el sub-menú de búsqueda
+    if resultados is None:
+        return
+
     indice = elegir_de_lista(resultados)
 
 # Si el índice es None (porque no hubo resultados o se canceló),
@@ -116,6 +121,11 @@ def devolver_libro(biblioteca):
         return
 
     resultados = pedir_y_filtrar(biblioteca)
+    
+# Vuelve al menú si el usuario presionó '0' en el sub-menú de búsqueda
+    if resultados is None:
+        return
+
     indice = elegir_de_lista(resultados)
 
 # Aplicamos la misma validación que en prestar_libro
