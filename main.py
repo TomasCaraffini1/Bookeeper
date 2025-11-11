@@ -4,26 +4,47 @@ from libros.alta import alta_libro
 from libros.lista import listar_libros
 from libros.busca import buscar_libro
 from libros.alquiler import prestar_libro, devolver_libro
+from libros.socios import registrar_socio, listar_socios
+from libros.historial import mostrar_historial
 
 def cargar_datos(archivo="datos.json"):
     """
-    Carga la lista de libros desde el archivo JSON especificado.
+    Carga los datos desde un archivo JSON.
+    Si el archivo no existe, está vacío o tiene una estructura incorrecta,
+    devuelve un diccionario con listas vacías.
     """
-    # Verifica si el archivo existe
     if not os.path.exists(archivo):
         print(f"⚠️ Advertencia: No se encontró '{archivo}'. Se creará uno nuevo al salir.")
-        return []  # Retorna una lista vacía si el archivo no existe
+        return {"libros": [], "socios": [], "historial": []}
 
     try:
-        with open(archivo, 'r', encoding='utf-8') as f:
-            # json.load() lee el archivo y convierte el JSON a una lista de Python
+        with open(archivo, "r", encoding="utf-8") as f:
             datos = json.load(f)
+
+            # Si el contenido es una lista (versión vieja del archivo)
+            if type(datos) is list:
+                print("⚠️ El archivo contenía una lista antigua. Se migrará a la nueva estructura.")
+                return {"libros": datos, "socios": [], "historial": []}
+
+            # Si faltan claves, las completa
+            if "libros" not in datos or "socios" not in datos or "historial" not in datos:
+                print(f"⚠️ Estructura de datos incompleta. Se inicializan listas vacías.")
+                nuevos_datos = {"libros": [], "socios": [], "historial": []}
+                if "libros" in datos:
+                    nuevos_datos["libros"] = datos["libros"]
+                if "socios" in datos:
+                    nuevos_datos["socios"] = datos["socios"]
+                if "historial" in datos:
+                    nuevos_datos["historial"] = datos["historial"]
+                return nuevos_datos
+
             return datos
-            
+
     except json.JSONDecodeError:
-        # Esto pasa si el archivo JSON está vacío o corrupto
-        print(f"⚠️ Advertencia: El archivo '{archivo}' está vacío o malformado. Iniciando con lista vacía.")
-        return []
+        print(f"⚠️ Advertencia: El archivo '{archivo}' está vacío o malformado. Iniciando con datos vacíos.")
+        return {"libros": [], "socios": [], "historial": []}
+
+
 
 def guardar_datos(libros, archivo="datos.json"):
     """
@@ -39,9 +60,6 @@ def guardar_datos(libros, archivo="datos.json"):
         print(f"❌ Error al guardar los datos en '{archivo}': {e}")  
 
 def mostrar_menu():
-    """
-    Muestra el menú de opciones al usuario.
-    """
     print("========================================")
     print("📚 SISTEMA DE GESTIÓN DE BIBLIOTECA")
     print("========================================")
@@ -50,25 +68,30 @@ def mostrar_menu():
     print("3. Buscar libro")
     print("4. Préstamo de libro")
     print("5. Devolución de libro")
-    print("6. Salir")
+    print("6. Registrar socio")
+    print("7. Listar socios")
+    print("8. Ver historial de préstamos")
+    print("9. Salir")
     print("========================================")
+
 
 # lee y valida la opcion del usuario, retorna opcion valida entre 1 y 6
 def elegir_opcion():
     while True:
         try:
-            opcion = int(input("Seleccione una opción (1-6): "))
-            if 1 <= opcion <= 6:
+            opcion = int(input("Seleccione una opción (1-9): "))
+            if 1 <= opcion <= 9:
                 return opcion
             else:
-                print("❌ Error: Ingrese un número entre 1 y 6.")
+                print("❌ Error: Ingrese un número entre 1 y 9.")
         except ValueError:
             print("❌ Error: Por favor ingrese un número entero.")
 
 def main():
-    # lista global de los libros
-    libros = cargar_datos("datos.json")
-    print(f"\nSistema iniciado. Se cargaron {len(libros)} libros desde datos.json.")
+    datos = cargar_datos("datos.json")
+    libros = datos.get("libros", [])
+    socios = datos.get("socios", [])
+    historial = datos.get("historial", [])
 
     while True:
         mostrar_menu()
@@ -81,15 +104,20 @@ def main():
         elif opcion == 3:
             buscar_libro(libros)
         elif opcion == 4:
-            prestar_libro(libros)
+            prestar_libro(libros, socios, historial)
         elif opcion == 5:
-            devolver_libro(libros)
+            devolver_libro(libros, socios, historial)
         elif opcion == 6:
-            guardar_datos(libros, "datos.json")
-            print("\n")
-            print("Gracias por utilizar Bookeeper!👋")
-            print("\n")
+            registrar_socio(socios)
+        elif opcion == 7:
+            listar_socios(socios)
+        elif opcion == 8:
+            mostrar_historial(historial)
+        elif opcion == 9:
+            guardar_datos({"libros": libros, "socios": socios, "historial": historial}, "datos.json")
+            print("\nGracias por utilizar Bookeeper!👋\n")
             break
+
 
 ####################################### Programa Principal ##############################
 

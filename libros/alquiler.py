@@ -1,6 +1,6 @@
 from .lista import listar_libros     # Reutiliza la logica de impresion
 from .busca import pedir_y_filtrar   # Reutiliza la logica de busqueda
-
+from .historial import registrar_prestamo, registrar_devolucion
 
 def listar_coincidencias(resultados):
     # Muestra por pantalla la lista de coincidencias con un índice al inicio
@@ -79,58 +79,61 @@ def elegir_de_lista(resultados):
 
 
 # Funciones específicas
-def prestar_libro(biblioteca):
-# Presta un libro y modifica su estado
-
+def prestar_libro(biblioteca, socios, historial):
     if not biblioteca:
         print("\nNo hay libros cargados.")
+        return
+    if not socios:
+        print("\nNo hay socios registrados. Registre uno antes de prestar.")
+        return
+
+    dni = input("Ingrese el DNI del socio: ").strip()
+    socio = next((s for s in socios if s["DNI"] == dni), None)
+    if not socio:
+        print("❌ Socio no encontrado.")
         return
 
     resultados = pedir_y_filtrar(biblioteca)
     indice = elegir_de_lista(resultados)
-
-# Si el índice es None (porque no hubo resultados o se canceló),
-# detenemos la función aquí y volvemos al menú.
     if indice is None:
         return
 
     libro = resultados[indice]
-    # Valida que este Disponible
-    estado_actual = libro.get("Estado", "")
-    if estado_actual.lower() != "disponible".lower():
-        print(f"\nNo se puede prestar. El libro está: {estado_actual}")
-        print("Solo se pueden prestar libros disponibles.")
+    if libro["Estado"].lower() != "disponible":
+        print(f"❌ El libro está {libro['Estado']}.")
         return
 
     libro["Estado"] = "Alquilado"
-    print("\n✅ Préstamo registrado. Libro actualizado:")
+    registrar_prestamo(historial, dni, libro["Título"])
+    print(f"\n✅ {socio['Nombre']} ha alquilado '{libro['Título']}'.")
     listar_libros([libro])
-    print("\n")
 
-
-def devolver_libro(biblioteca):
-# Devuelve un libro y modifica su estado
-
+def devolver_libro(biblioteca, socios, historial):
     if not biblioteca:
         print("\nNo hay libros cargados.")
+        return
+    if not socios:
+        print("\nNo hay socios registrados.")
+        return
+        
+    dni = input("Ingrese el DNI del socio: ").strip()
+    socio = next((s for s in socios if s["DNI"] == dni), None)
+    if not socio:
+        print("❌ Socio no encontrado.")
         return
 
     resultados = pedir_y_filtrar(biblioteca)
     indice = elegir_de_lista(resultados)
-
-# Aplicamos la misma validación que en prestar_libro
     if indice is None:
         return
 
     libro = resultados[indice]
-
-# Valida que este Alquilado
-    estado_actual = libro.get("Estado", "")
-    if estado_actual.lower() != "alquilado".lower():
-        print(f"\nNo se puede devolver. El libro está: {estado_actual}")
-        print("Solo se pueden devolver libros alquilados.")
+    
+    if libro["Estado"].lower() != "alquilado":
+        print(f"❌ El libro está {libro['Estado']}.")
         return
 
     libro["Estado"] = "Disponible"
-    print("\n✅ Devolución registrada. Libro actualizado:")
+    registrar_devolucion(historial, dni, libro["Título"])
+    print(f"\n✅ {socio['Nombre']} devolvió '{libro['Título']}'.")
     listar_libros([libro])
