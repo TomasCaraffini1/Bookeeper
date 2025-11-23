@@ -6,19 +6,19 @@ from .lista import listar_libros                                          # Reut
 CRITERIOS = {
     "1": {
         "pedir": pedir_titulo,
-        "comparador": lambda libro, q: normalizar(q) in normalizar(libro.get("titulo", "")),
+        "comparador": lambda libro, q: normalizar(q) in normalizar(libro.get("Título", "")),
     },
     "2": {
         "pedir": pedir_autor,
-        "comparador": lambda libro, q: normalizar(q) in normalizar(libro.get("autor", ""))
+        "comparador": lambda libro, q: normalizar(q) in normalizar(libro.get("Autor", ""))
     },
     "3": {
         "pedir": pedir_genero,
-        "comparador": lambda libro, q: normalizar(libro.get("genero", "")) == normalizar(q),
+        "comparador": lambda libro, q: normalizar(libro.get("Género", "")) == normalizar(q),
     },
     "4": {
         "pedir": pedir_anio_dc,
-        "comparador": lambda libro, q: libro.get("año") == q,
+        "comparador": lambda libro, q: libro.get("Año") == q,
     },
 }
 
@@ -35,13 +35,18 @@ def pedir_y_filtrar(biblioteca):
     print("2. Autor  (parcial)")
     print("3. Género (exacto)")
     print("4. Año    (exacto)")
+    print("0. Volver al menu principal.")
 
     # Elige criterio
     while True:
-        opcion = input("Seleccione una opción (1-4): ").strip()
+        opcion = input("Seleccione una opción (0-4): ").strip()
+        if opcion == "0":
+            print("\nVolviendo al menu principal.")
+            return None
+        
         if opcion in {"1", "2", "3", "4"}:
             break
-        print("Opción inválida. Ingrese 1, 2, 3 o 4.")
+        print("Opción inválida. Ingrese 0, 1, 2, 3 o 4.")
 
     # Obtiene valor del usuario
     valor = CRITERIOS[opcion]["pedir"]()
@@ -61,6 +66,21 @@ def buscar_libro(biblioteca):
         return 
 
     resultados = pedir_y_filtrar(biblioteca)
+    
+    # Vuelve al menú si el usuario presionó '0' en el sub-menú de búsqueda
+    if resultados is None:
+        return
 
+    if not resultados:
+        print("\nNo se encontraron resultados. Intente otra búsqueda.")
+        return
+
+    cantidad = len(resultados)
+    if cantidad == 1:
+        print(f"\nSe encontró {cantidad} resultado 🎯:\n")
+    else:
+        print(f"\nSe encontraron {cantidad} resultados 🎯:\n")
+    
     # Reusa el mismo formato de impresión
     listar_libros(resultados)
+    print("\n")

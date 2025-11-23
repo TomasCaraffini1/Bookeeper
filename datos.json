@@ -1,0 +1,751 @@
+[
+    {
+        "T\u00edtulo": "Cien A\u00f1os de Soledad",
+        "Autor": "Gabriel Garc\u00eda M\u00e1rquez",
+        "G\u00e9nero": "Realismo M\u00e1gico",
+        "A\u00f1o": 1967,
+        "Estado": "Disponible"
+    },
+    {
+        "T\u00edtulo": "1984",
+        "Autor": "George Orwell",
+        "G\u00e9nero": "Distop\u00eda",
+        "A\u00f1o": 1949,
+        "Estado": "Alquilado"
+    },
+    {
+        "T\u00edtulo": "Don Quijote de la Mancha",
+        "Autor": "Miguel de Cervantes",
+        "G\u00e9nero": "Novela",
+        "A\u00f1o": 1605,
+        "Estado": "Disponible"
+    },
+    {
+        "T\u00edtulo": "Rayuela",
+        "Autor": "Julio Cort\u00e1zar",
+        "G\u00e9nero": "Experimental",
+        "A\u00f1o": 1963,
+        "Estado": "Disponible"
+    },
+    {
+        "T\u00edtulo": "La Ciudad y los Perros",
+        "Autor": "Mario Vargas Llosa",
+        "G\u00e9nero": "Novela",
+        "A\u00f1o": 1963,
+        "Estado": "Alquilado"
+    },
+    {
+        "T\u00edtulo": "El Nombre de la Rosa",
+        "Autor": "Umberto Eco",
+        "G\u00e9nero": "Misterio Hist\u00f3rico",
+        "A\u00f1o": 1980,
+        "Estado": "Disponible"
+    },
+    {
+        "T\u00edtulo": "Crimen y Castigo",
+        "Autor": "Fi\u00f3dor Dostoyevski",
+        "G\u00e9nero": "Filos\u00f3fica",
+        "A\u00f1o": 1866,
+        "Estado": "Disponible"
+    },
+    {
+        "T\u00edtulo": "El Gran Gatsby",
+        "Autor": "F. Scott Fitzgerald",
+        "G\u00e9nero": "Cl\u00e1sico Moderno",
+        "A\u00f1o": 1925,
+        "Estado": "Alquilado"
+    },
+    {
+        "T\u00edtulo": "Matar a un Ruise\u00f1or",
+        "Autor": "Harper Lee",
+        "G\u00e9nero": "Ficci\u00f3n Social",
+        "A\u00f1o": 1960,
+        "Estado": "Disponible"
+    },
+    {
+        "T\u00edtulo": "Orgullo y Prejuicio",
+        "Autor": "Jane Austen",
+        "G\u00e9nero": "Romance Cl\u00e1sico",
+        "A\u00f1o": 1813,
+        "Estado": "Disponible"
+    },
+    {
+        "T\u00edtulo": "El Hobbit",
+        "Autor": "J.R.R. Tolkien",
+        "G\u00e9nero": "Fantas\u00eda",
+        "A\u00f1o": 1937,
+        "Estado": "Alquilado"
+    },
+    {
+        "T\u00edtulo": "Guerra y Paz",
+        "Autor": "Le\u00f3n Tolst\u00f3i",
+        "G\u00e9nero": "Novela Hist\u00f3rica",
+        "A\u00f1o": 1869,
+        "Estado": "Disponible"
+    },
+    {
+        "T\u00edtulo": "Hamlet",
+        "Autor": "William Shakespeare",
+        "G\u00e9nero": "Tragedia",
+        "A\u00f1o": 1603,
+        "Estado": "Disponible"
+    },
+    {
+        "T\u00edtulo": "Frankenstein",
+        "Autor": "Mary Shelley",
+        "G\u00e9nero": "Ciencia Ficci\u00f3n Cl\u00e1sica",
+        "A\u00f1o": 1818,
+        "Estado": "Alquilado"
+    },
+    {
+        "T\u00edtulo": "Dr\u00e1cula",
+        "Autor": "Bram Stoker",
+        "G\u00e9nero": "Terror G\u00f3tico",
+        "A\u00f1o": 1897,
+        "Estado": "Disponible"
+    },
+    {
+        "T\u00edtulo": "Las Aventuras de Tom Sawyer",
+        "Autor": "Mark Twain",
+        "G\u00e9nero": "Juvenil",
+        "A\u00f1o": 1876,
+        "Estado": "Disponible"
+    },
+    {
+        "T\u00edtulo": "El Retrato de Dorian Gray",
+        "Autor": "Oscar Wilde",
+        "G\u00e9nero": "Filos\u00f3fica",
+        "A\u00f1o": 1890,
+        "Estado": "Disponible"
+    },
+    {
+        "T\u00edtulo": "Alicia en el Pa\u00eds de las Maravillas",
+        "Autor": "Lewis Carroll",
+        "G\u00e9nero": "Fantas\u00eda",
+        "A\u00f1o": 1865,
+        "Estado": "Alquilado"
+    },
+    {
+        "T\u00edtulo": "Veinte Mil Leguas de Viaje Submarino",
+        "Autor": "Julio Verne",
+        "G\u00e9nero": "Aventura",
+        "A\u00f1o": 1870,
+        "Estado": "Disponible"
+    },
+    {
+        "T\u00edtulo": "La Vuelta al Mundo en Ochenta D\u00edas",
+        "Autor": "Julio Verne",
+        "G\u00e9nero": "Aventura",
+        "A\u00f1o": 1873,
+        "Estado": "Disponible"
+    },
+    {
+        "T\u00edtulo": "El Principito",
+        "Autor": "Antoine de Saint-Exup\u00e9ry",
+        "G\u00e9nero": "F\u00e1bula",
+        "A\u00f1o": 1943,
+        "Estado": "Disponible"
+    },
+    {
+        "T\u00edtulo": "La Metamorfosis",
+        "Autor": "Franz Kafka",
+        "G\u00e9nero": "Ficci\u00f3n",
+        "A\u00f1o": 1915,
+        "Estado": "Alquilado"
+    },
+    {
+        "T\u00edtulo": "Madame Bovary",
+        "Autor": "Gustave Flaubert",
+        "G\u00e9nero": "Realismo",
+        "A\u00f1o": 1856,
+        "Estado": "Disponible"
+    },
+    {
+        "T\u00edtulo": "Los Miserables",
+        "Autor": "Victor Hugo",
+        "G\u00e9nero": "Novela Social",
+        "A\u00f1o": 1862,
+        "Estado": "Disponible"
+    },
+    {
+        "T\u00edtulo": "Jane Eyre",
+        "Autor": "Charlotte Bront\u00eb",
+        "G\u00e9nero": "G\u00f3tico",
+        "A\u00f1o": 1847,
+        "Estado": "Disponible"
+    },
+    {
+        "T\u00edtulo": "Cumbres Borrascosas",
+        "Autor": "Emily Bront\u00eb",
+        "G\u00e9nero": "Romance G\u00f3tico",
+        "A\u00f1o": 1847,
+        "Estado": "Alquilado"
+    },
+    {
+        "T\u00edtulo": "Un Mundo Feliz",
+        "Autor": "Aldous Huxley",
+        "G\u00e9nero": "Distop\u00eda",
+        "A\u00f1o": 1932,
+        "Estado": "Disponible"
+    },
+    {
+        "T\u00edtulo": "Fahrenheit 451",
+        "Autor": "Ray Bradbury",
+        "G\u00e9nero": "Ciencia Ficci\u00f3n",
+        "A\u00f1o": 1953,
+        "Estado": "Disponible"
+    },
+    {
+        "T\u00edtulo": "Siddhartha",
+        "Autor": "Hermann Hesse",
+        "G\u00e9nero": "Filos\u00f3fica",
+        "A\u00f1o": 1922,
+        "Estado": "Disponible"
+    },
+    {
+        "T\u00edtulo": "El Lobo Estepario",
+        "Autor": "Hermann Hesse",
+        "G\u00e9nero": "Novela",
+        "A\u00f1o": 1927,
+        "Estado": "Alquilado"
+    },
+    {
+        "T\u00edtulo": "Ulises",
+        "Autor": "James Joyce",
+        "G\u00e9nero": "Modernismo",
+        "A\u00f1o": 1922,
+        "Estado": "Disponible"
+    },
+    {
+        "T\u00edtulo": "El Viejo y el Mar",
+        "Autor": "Ernest Hemingway",
+        "G\u00e9nero": "Cl\u00e1sico",
+        "A\u00f1o": 1952,
+        "Estado": "Disponible"
+    },
+    {
+        "T\u00edtulo": "Las Uvas de la Ira",
+        "Autor": "John Steinbeck",
+        "G\u00e9nero": "Realismo Social",
+        "A\u00f1o": 1939,
+        "Estado": "Disponible"
+    },
+    {
+        "T\u00edtulo": "De Ratones y Hombres",
+        "Autor": "John Steinbeck",
+        "G\u00e9nero": "Tragedia",
+        "A\u00f1o": 1937,
+        "Estado": "Alquilado"
+    },
+    {
+        "T\u00edtulo": "El Extra\u00f1o Caso del Dr. Jekyll y Mr. Hyde",
+        "Autor": "Robert Louis Stevenson",
+        "G\u00e9nero": "Novela G\u00f3tica",
+        "A\u00f1o": 1886,
+        "Estado": "Disponible"
+    },
+    {
+        "T\u00edtulo": "La Isla del Tesoro",
+        "Autor": "Robert Louis Stevenson",
+        "G\u00e9nero": "Aventura",
+        "A\u00f1o": 1883,
+        "Estado": "Disponible"
+    },
+    {
+        "T\u00edtulo": "El Conde de Montecristo",
+        "Autor": "Alexandre Dumas",
+        "G\u00e9nero": "Aventura",
+        "A\u00f1o": 1844,
+        "Estado": "Disponible"
+    },
+    {
+        "T\u00edtulo": "Los Tres Mosqueteros",
+        "Autor": "Alexandre Dumas",
+        "G\u00e9nero": "Aventura",
+        "A\u00f1o": 1844,
+        "Estado": "Alquilado"
+    },
+    {
+        "T\u00edtulo": "El Padrino",
+        "Autor": "Mario Puzo",
+        "G\u00e9nero": "Novela Negra",
+        "A\u00f1o": 1969,
+        "Estado": "Disponible"
+    },
+    {
+        "T\u00edtulo": "IT (Eso)",
+        "Autor": "Stephen King",
+        "G\u00e9nero": "Terror",
+        "A\u00f1o": 1986,
+        "Estado": "Disponible"
+    },
+    {
+        "T\u00edtulo": "Carrie",
+        "Autor": "Stephen King",
+        "G\u00e9nero": "Terror",
+        "A\u00f1o": 1974,
+        "Estado": "Disponible"
+    },
+    {
+        "T\u00edtulo": "El C\u00f3digo Da Vinci",
+        "Autor": "Dan Brown",
+        "G\u00e9nero": "Thriller",
+        "A\u00f1o": 2003,
+        "Estado": "Alquilado"
+    },
+    {
+        "T\u00edtulo": "El Perfume",
+        "Autor": "Patrick S\u00fcskind",
+        "G\u00e9nero": "Ficci\u00f3n Hist\u00f3rica",
+        "A\u00f1o": 1985,
+        "Estado": "Disponible"
+    },
+    {
+        "T\u00edtulo": "La Sombra del Viento",
+        "Autor": "Carlos Ruiz Zaf\u00f3n",
+        "G\u00e9nero": "Misterio",
+        "A\u00f1o": 2001,
+        "Estado": "Disponible"
+    },
+    {
+        "T\u00edtulo": "La Casa de los Esp\u00edritus",
+        "Autor": "Isabel Allende",
+        "G\u00e9nero": "Realismo M\u00e1gico",
+        "A\u00f1o": 1982,
+        "Estado": "Disponible"
+    },
+    {
+        "T\u00edtulo": "Ensayo sobre la Ceguera",
+        "Autor": "Jos\u00e9 Saramago",
+        "G\u00e9nero": "Alegor\u00eda",
+        "A\u00f1o": 1995,
+        "Estado": "Alquilado"
+    },
+    {
+        "T\u00edtulo": "El Psicoanalista",
+        "Autor": "John Katzenbach",
+        "G\u00e9nero": "Thriller Psicol\u00f3gico",
+        "A\u00f1o": 2002,
+        "Estado": "Disponible"
+    },
+    {
+        "T\u00edtulo": "El Nombre del Viento",
+        "Autor": "Patrick Rothfuss",
+        "G\u00e9nero": "Fantas\u00eda \u00c9pica",
+        "A\u00f1o": 2007,
+        "Estado": "Disponible"
+    },
+    {
+        "T\u00edtulo": "Juego de Tronos",
+        "Autor": "George R.R. Martin",
+        "G\u00e9nero": "Fantas\u00eda \u00c9pica",
+        "A\u00f1o": 1996,
+        "Estado": "Disponible"
+    },
+    {
+        "T\u00edtulo": "El \u00daltimo Deseo (Geralt de Rivia)",
+        "Autor": "Andrzej Sapkowski",
+        "G\u00e9nero": "Fantas\u00eda",
+        "A\u00f1o": 1993,
+        "Estado": "Alquilado"
+    },
+    {
+        "T\u00edtulo": "Dune",
+        "Autor": "Frank Herbert",
+        "G\u00e9nero": "Ciencia Ficci\u00f3n",
+        "A\u00f1o": 1965,
+        "Estado": "Disponible"
+    },
+    {
+        "T\u00edtulo": "Yo, Robot",
+        "Autor": "Isaac Asimov",
+        "G\u00e9nero": "Ciencia Ficci\u00f3n",
+        "A\u00f1o": 1950,
+        "Estado": "Disponible"
+    },
+    {
+        "T\u00edtulo": "Fundaci\u00f3n",
+        "Autor": "Isaac Asimov",
+        "G\u00e9nero": "Ciencia Ficci\u00f3n",
+        "A\u00f1o": 1951,
+        "Estado": "Disponible"
+    },
+    {
+        "T\u00edtulo": "Neuromante",
+        "Autor": "William Gibson",
+        "G\u00e9nero": "Cyberpunk",
+        "A\u00f1o": 1984,
+        "Estado": "Alquilado"
+    },
+    {
+        "T\u00edtulo": "El Resplandor",
+        "Autor": "Stephen King",
+        "G\u00e9nero": "Terror",
+        "A\u00f1o": 1977,
+        "Estado": "Disponible"
+    },
+    {
+        "T\u00edtulo": "La Chica del Tren",
+        "Autor": "Paula Hawkins",
+        "G\u00e9nero": "Misterio",
+        "A\u00f1o": 2015,
+        "Estado": "Disponible"
+    },
+    {
+        "T\u00edtulo": "Perdida",
+        "Autor": "Gillian Flynn",
+        "G\u00e9nero": "Thriller",
+        "A\u00f1o": 2012,
+        "Estado": "Disponible"
+    },
+    {
+        "T\u00edtulo": "El Silencio de los Corderos",
+        "Autor": "Thomas Harris",
+        "G\u00e9nero": "Thriller",
+        "A\u00f1o": 1988,
+        "Estado": "Alquilado"
+    },
+    {
+        "T\u00edtulo": "El Alquimista",
+        "Autor": "Paulo Coelho",
+        "G\u00e9nero": "Ficci\u00f3n",
+        "A\u00f1o": 1988,
+        "Estado": "Disponible"
+    },
+    {
+        "T\u00edtulo": "El Guardi\u00e1n entre el Centeno",
+        "Autor": "J.D. Salinger",
+        "G\u00e9nero": "Ficci\u00f3n Juvenil",
+        "A\u00f1o": 1951,
+        "Estado": "Disponible"
+    },
+    {
+        "T\u00edtulo": "Sapiens: De animales a dioses",
+        "Autor": "Yuval Noah Harari",
+        "G\u00e9nero": "No Ficci\u00f3n",
+        "A\u00f1o": 2011,
+        "Estado": "Disponible"
+    },
+    {
+        "T\u00edtulo": "Una Breve Historia del Tiempo",
+        "Autor": "Stephen Hawking",
+        "G\u00e9nero": "Ciencia",
+        "A\u00f1o": 1988,
+        "Estado": "Alquilado"
+    },
+    {
+        "T\u00edtulo": "Cosmos",
+        "Autor": "Carl Sagan",
+        "G\u00e9nero": "Ciencia",
+        "A\u00f1o": 1980,
+        "Estado": "Disponible"
+    },
+    {
+        "T\u00edtulo": "La Carretera",
+        "Autor": "Cormac McCarthy",
+        "G\u00e9nero": "Post-apocal\u00edptica",
+        "A\u00f1o": 2006,
+        "Estado": "Disponible"
+    },
+    {
+        "T\u00edtulo": "Meridiano de Sangre",
+        "Autor": "Cormac McCarthy",
+        "G\u00e9nero": "Western",
+        "A\u00f1o": 1985,
+        "Estado": "Disponible"
+    },
+    {
+        "T\u00edtulo": "Poeta en Nueva York",
+        "Autor": "Federico Garc\u00eda Lorca",
+        "G\u00e9nero": "Poes\u00eda",
+        "A\u00f1o": 1940,
+        "Estado": "Alquilado"
+    },
+    {
+        "T\u00edtulo": "2666",
+        "Autor": "Roberto Bola\u00f1o",
+        "G\u00e9nero": "Novela",
+        "A\u00f1o": 2004,
+        "Estado": "Disponible"
+    },
+    {
+        "T\u00edtulo": "Los Detectives Salvajes",
+        "Autor": "Roberto Bola\u00f1o",
+        "G\u00e9nero": "Novela",
+        "A\u00f1o": 1998,
+        "Estado": "Disponible"
+    },
+    {
+        "T\u00edtulo": "Veinte Poemas de Amor",
+        "Autor": "Pablo Neruda",
+        "G\u00e9nero": "Poes\u00eda",
+        "A\u00f1o": 1924,
+        "Estado": "Disponible"
+    },
+    {
+        "T\u00edtulo": "El Laberinto de la Soledad",
+        "Autor": "Octavio Paz",
+        "G\u00e9nero": "Ensayo",
+        "A\u00f1o": 1950,
+        "Estado": "Disponible"
+    },
+    {
+        "T\u00edtulo": "Pedro P\u00e1ramo",
+        "Autor": "Juan Rulfo",
+        "G\u00e9nero": "Realismo M\u00e1gico",
+        "A\u00f1o": 1955,
+        "Estado": "Alquilado"
+    },
+    {
+        "T\u00edtulo": "Ficciones",
+        "Autor": "Jorge Luis Borges",
+        "G\u00e9nero": "Cuentos",
+        "A\u00f1o": 1944,
+        "Estado": "Disponible"
+    },
+    {
+        "T\u00edtulo": "El Aleph",
+        "Autor": "Jorge Luis Borges",
+        "G\u00e9nero": "Cuentos",
+        "A\u00f1o": 1949,
+        "Estado": "Disponible"
+    },
+    {
+        "T\u00edtulo": "Historias de Cronopios y de Famas",
+        "Autor": "Julio Cort\u00e1zar",
+        "G\u00e9nero": "Cuentos Cortos",
+        "A\u00f1o": 1962,
+        "Estado": "Disponible"
+    },
+    {
+        "T\u00edtulo": "La Tregua",
+        "Autor": "Mario Benedetti",
+        "G\u00e9nero": "Novela",
+        "A\u00f1o": 1960,
+        "Estado": "Alquilado"
+    },
+    {
+        "T\u00edtulo": "El T\u00fanel",
+        "Autor": "Ernesto S\u00e1bato",
+        "G\u00e9nero": "Novela Psicol\u00f3gica",
+        "A\u00f1o": 1948,
+        "Estado": "Disponible"
+    },
+    {
+        "T\u00edtulo": "El Proceso",
+        "Autor": "Franz Kafka",
+        "G\u00e9nero": "Absurdo",
+        "A\u00f1o": 1925,
+        "Estado": "Disponible"
+    },
+    {
+        "T\u00edtulo": "El Castillo",
+        "Autor": "Franz Kafka",
+        "G\u00e9nero": "Absurdo",
+        "A\u00f1o": 1926,
+        "Estado": "Disponible"
+    },
+    {
+        "T\u00edtulo": "Bodas de Sangre",
+        "Autor": "Federico Garc\u00eda Lorca",
+        "G\u00e9nero": "Teatro",
+        "A\u00f1o": 1933,
+        "Estado": "Alquilado"
+    },
+    {
+        "T\u00edtulo": "Edipo Rey",
+        "Autor": "S\u00f3focles",
+        "G\u00e9nero": "Tragedia Griega",
+        "A\u00f1o": -429,
+        "Estado": "Alquilado"
+    },
+    {
+        "T\u00edtulo": "Meditaciones",
+        "Autor": "Marco Aurelio",
+        "G\u00e9nero": "Filosof\u00eda",
+        "A\u00f1o": 180,
+        "Estado": "Disponible"
+    },
+    {
+        "T\u00edtulo": "La Divina Comedia",
+        "Autor": "Dante Alighieri",
+        "G\u00e9nero": "Poes\u00eda \u00c9pica",
+        "A\u00f1o": 1320,
+        "Estado": "Disponible"
+    },
+    {
+        "T\u00edtulo": "Decamer\u00f3n",
+        "Autor": "Giovanni Boccaccio",
+        "G\u00e9nero": "Cuentos",
+        "A\u00f1o": 1353,
+        "Estado": "Alquilado"
+    },
+    {
+        "T\u00edtulo": "El Pr\u00edncipe",
+        "Autor": "Nicol\u00e1s Maquiavelo",
+        "G\u00e9nero": "Ensayo Pol\u00edtico",
+        "A\u00f1o": 1532,
+        "Estado": "Disponible"
+    },
+    {
+        "T\u00edtulo": "Utop\u00eda",
+        "Autor": "Tom\u00e1s Moro",
+        "G\u00e9nero": "Filosof\u00eda",
+        "A\u00f1o": 1516,
+        "Estado": "Disponible"
+    },
+    {
+        "T\u00edtulo": "Los Viajes de Gulliver",
+        "Autor": "Jonathan Swift",
+        "G\u00e9nero": "S\u00e1tira",
+        "A\u00f1o": 1726,
+        "Estado": "Disponible"
+    },
+    {
+        "T\u00edtulo": "Sentido y Sensibilidad",
+        "Autor": "Jane Austen",
+        "G\u00e9nero": "Romance Cl\u00e1sico",
+        "A\u00f1o": 1811,
+        "Estado": "Disponible"
+    },
+    {
+        "T\u00edtulo": "Ivanhoe",
+        "Autor": "Walter Scott",
+        "G\u00e9nero": "Novela Hist\u00f3rica",
+        "A\u00f1o": 1819,
+        "Estado": "Alquilado"
+    },
+    {
+        "T\u00edtulo": "Mujercitas",
+        "Autor": "Louisa May Alcott",
+        "G\u00e9nero": "Juvenil",
+        "A\u00f1o": 1868,
+        "Estado": "Disponible"
+    },
+    {
+        "T\u00edtulo": "Anna Karenina",
+        "Autor": "Le\u00f3n Tolst\u00f3i",
+        "G\u00e9nero": "Realismo",
+        "A\u00f1o": 1877,
+        "Estado": "Disponible"
+    },
+    {
+        "T\u00edtulo": "La Guerra de los Mundos",
+        "Autor": "H. G. Wells",
+        "G\u00e9nero": "Ciencia Ficci\u00f3n",
+        "A\u00f1o": 1898,
+        "Estado": "Disponible"
+    },
+    {
+        "T\u00edtulo": "El Llamado de lo Salvaje",
+        "Autor": "Jack London",
+        "G\u00e9nero": "Aventura",
+        "A\u00f1o": 1903,
+        "Estado": "Alquilado"
+    },
+    {
+        "T\u00edtulo": "El Jard\u00edn Secreto",
+        "Autor": "Frances Hodgson Burnett",
+        "G\u00e9nero": "Juvenil",
+        "A\u00f1o": 1911,
+        "Estado": "Disponible"
+    },
+    {
+        "T\u00edtulo": "Peter Pan",
+        "Autor": "J. M. Barrie",
+        "G\u00e9nero": "Fantas\u00eda Juvenil",
+        "A\u00f1o": 1911,
+        "Estado": "Disponible"
+    },
+    {
+        "T\u00edtulo": "Tarz\u00e1n de los Monos",
+        "Autor": "Edgar Rice Burroughs",
+        "G\u00e9nero": "Aventura",
+        "A\u00f1o": 1912,
+        "Estado": "Disponible"
+    },
+    {
+        "T\u00edtulo": "El Castillo de Otranto",
+        "Autor": "Horace Walpole",
+        "G\u00e9nero": "Novela G\u00f3tica",
+        "A\u00f1o": 1764,
+        "Estado": "Disponible"
+    },
+    {
+        "T\u00edtulo": "Las Flores del Mal",
+        "Autor": "Charles Baudelaire",
+        "G\u00e9nero": "Poes\u00eda",
+        "A\u00f1o": 1857,
+        "Estado": "Alquilado"
+    },
+    {
+        "T\u00edtulo": "Rimas y Leyendas",
+        "Autor": "Gustavo Adolfo B\u00e9cquer",
+        "G\u00e9nero": "Poes\u00eda Rom\u00e1ntica",
+        "A\u00f1o": 1871,
+        "Estado": "Disponible"
+    },
+    {
+        "T\u00edtulo": "La Regenta",
+        "Autor": "Leopoldo Alas Clar\u00edn",
+        "G\u00e9nero": "Realismo",
+        "A\u00f1o": 1884,
+        "Estado": "Disponible"
+    },
+    {
+        "T\u00edtulo": "Fortunata y Jacinta",
+        "Autor": "Benito P\u00e9rez Gald\u00f3s",
+        "G\u00e9nero": "Realismo",
+        "A\u00f1o": 1887,
+        "Estado": "Disponible"
+    },
+    {
+        "T\u00edtulo": "Niebla",
+        "Autor": "Miguel de Unamuno",
+        "G\u00e9nero": "Novela",
+        "A\u00f1o": 1914,
+        "Estado": "Disponible"
+    },
+    {
+        "T\u00edtulo": "Platero y Yo",
+        "Autor": "Juan Ram\u00f3n Jim\u00e9nez",
+        "G\u00e9nero": "Prosa L\u00edrica",
+        "A\u00f1o": 1914,
+        "Estado": "Alquilado"
+    },
+    {
+        "T\u00edtulo": "El \u00c1rbol de la Ciencia",
+        "Autor": "P\u00edo Baroja",
+        "G\u00e9nero": "Novela",
+        "A\u00f1o": 1911,
+        "Estado": "Disponible"
+    },
+    {
+        "T\u00edtulo": "Tirano Banderas",
+        "Autor": "Ram\u00f3n del Valle-Incl\u00e1n",
+        "G\u00e9nero": "Esperpento",
+        "A\u00f1o": 1926,
+        "Estado": "Disponible"
+    },
+    {
+        "T\u00edtulo": "La Peste",
+        "Autor": "Albert Camus",
+        "G\u00e9nero": "Existencialismo",
+        "A\u00f1o": 1947,
+        "Estado": "Disponible"
+    },
+    {
+        "T\u00edtulo": "El Extranjero",
+        "Autor": "Albert Camus",
+        "G\u00e9nero": "Existencialismo",
+        "A\u00f1o": 1942,
+        "Estado": "Disponible"
+    },
+    {
+        "T\u00edtulo": "El Genio Maligno",
+        "Autor": "Ren\u00e9 Descartes",
+        "G\u00e9nero": "Filosof\u00eda",
+        "A\u00f1o": 1641,
+        "Estado": "Alquilado"
+    }
+]

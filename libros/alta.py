@@ -33,8 +33,9 @@ def ingresar(msj, normalizar, validar, transformar, error_msj="Valor inválido."
 
 # Funciones específicas
 def pedir_titulo():
+    print("\n")
     return ingresar(
-        "Título Del Libro: ",
+        "🔍 Título Del Libro: ",
         normalizar=True,
         validar=lambda s: bool(RX_TITULO.match(s)),
         transformar=False,
@@ -44,7 +45,7 @@ def pedir_titulo():
 
 def pedir_autor():
     return ingresar(
-        "Autor Del Libro: ",
+        "✍️  Autor Del Libro: ",
         normalizar=True,
         validar=lambda s: bool(RX_AUTOR.match(s)),
         transformar=False,
@@ -54,7 +55,7 @@ def pedir_autor():
 
 def pedir_genero():
     return ingresar(
-        "Género Literario: ",
+        "🧩 Género Literario: ",
         normalizar=True,
         validar=lambda s: bool(RX_GENERO.match(s)),
         transformar=False,
@@ -70,7 +71,7 @@ def pedir_anio_dc():
         n = int(s)
         return 1 <= n <= anio_actual
     return ingresar(
-        "Año - D.C.: ",
+        "📅 Año - D.C.: ",
         normalizar=True,
         validar=_validar,
         transformar=int,
@@ -83,27 +84,29 @@ def existe_duplicado(biblioteca, titulo, autor):
 
     tittle = titulo.lower()
     author = autor.lower()
-    return any(libro["titulo"].strip().lower() == tittle and libro["autor"].strip().lower() == author for libro in biblioteca)
+    return any(libro["Título"].strip().lower() == tittle and libro["Autor"].strip().lower() == author for libro in biblioteca)
 
 
 def alta_libro(biblioteca):
     # Orquestador para la carga de libros
 
-    titulo = pedir_titulo()
-    autor  = pedir_autor()
+    Título = pedir_titulo()
+    Autor  = pedir_autor()
     genero = pedir_genero()
     anio   = pedir_anio_dc()
 
-    if existe_duplicado(biblioteca, titulo, autor):
-        print("El libro ya existe (mismo título y autor).")
+    if existe_duplicado(biblioteca, Título, Autor):
+        print("Este libro ya está registrado (mismo título y autor).")
         return
 
     nuevo = {
-        "titulo": titulo,
-        "autor": autor,
-        "genero": genero,
-        "año": anio,
-        "estado": "Disponible",
+        "Título": Título,
+        "Autor": Autor,
+        "Género": genero,
+        "Año": anio,
+        "Estado": "Disponible",
     }
     biblioteca.append(nuevo)
-    print("Libro agregado.")
+    print ("\n")
+    print("Libro agregado ✅")
+    print ("\n")
