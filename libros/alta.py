@@ -55,7 +55,7 @@ def pedir_titulo():
         str: Título ingresado.
     """
 
-    print("\n")
+    print()
     return ingresar(
         "🔍 Título Del Libro: ",
         normalizar=True,
