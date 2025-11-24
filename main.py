@@ -1,9 +1,35 @@
-import json
 import os
+import json
 from libros.alta import alta_libro
-from libros.lista import listar_libros
-from libros.busca import buscar_libro
 from libros.alquiler import prestar_libro, devolver_libro
+from libros.busca import buscar_libro, mostrar_disponibles
+from libros.lista import listar_libros, mostrar_resumen_libros
+
+
+def limpiar_consola():
+    """
+    Limpia la consola realizando un salto grande de líneas.
+
+    Nota:
+        Debido a que el programa funciona en múltiples entornos
+        (Sistemas Operartivos / IDEs), esta técnica evita depender de
+        comandos específicos del sistema operativo.
+
+    """
+    
+    print("\n" * 100)
+
+def pausar():
+    """
+    Pausa la ejecución hasta que el usuario presione ENTER.
+
+    Después de confirmar, limpia la consola para mantener
+    una interfaz ordenada entre cada operación.
+
+    """
+    
+    input("\n👉 Presione ENTER para continuar... ✨")
+    limpiar_consola()
 
 
 def cargar_datos(archivo="datos.json"):
@@ -57,6 +83,7 @@ def mostrar_menu():
     Muestra el menú principal del sistema Bookeeper.
 
     """
+
     print("========================================")
     print("📚BOOKEEPER")
     print("========================================")
@@ -65,7 +92,9 @@ def mostrar_menu():
     print("3. Buscar libro")
     print("4. Préstamo de libro")
     print("5. Devolución de libro")
-    print("6. Salir")
+    print("6. Ver libros disponibles")
+    print("7. Ver resumen de libros")
+    print("8. Salir")
     print("========================================")
 
 
@@ -73,7 +102,7 @@ def elegir_opcion():
     """
     Solicita y valida que el usuario elija una opción del menú principal.
 
-    Acepta únicamente números enteros entre 1 y 6.
+    Acepta únicamente números enteros entre 1 y 8.
 
     Devuelve:
         int: Opción seleccionada.
@@ -81,10 +110,10 @@ def elegir_opcion():
     """
     while True:
         try:
-            opcion = int(input("Seleccione una opción (1-6): "))
-            if 1 <= opcion <= 6:
+            opcion = int(input("Seleccione una opción (1-8): "))
+            if 1 <= opcion <= 8: 
                 return opcion
-            print("❌ Error: Ingrese un número entre 1 y 6.")
+            print("❌ Error: Ingrese un número entre 1 y 8.")
         except ValueError:
             print("❌ Error: Por favor ingrese un número entero.")
 
@@ -109,18 +138,30 @@ def main():
 
         if opcion == 1:
             alta_libro(libros)
+            pausar()
         elif opcion == 2:
             listar_libros(libros)
+            pausar()
         elif opcion == 3:
             buscar_libro(libros)
+            pausar()
         elif opcion == 4:
             prestar_libro(libros)
+            pausar()
         elif opcion == 5:
             devolver_libro(libros)
+            pausar()
         elif opcion == 6:
+            mostrar_disponibles(libros)
+            pausar()
+        elif opcion == 7:
+            mostrar_resumen_libros(libros)
+            pausar()
+        elif opcion == 8:
             guardar_datos(libros, "datos.json")
             print("\nGracias por utilizar Bookeeper!👋\n")
             break
+
 
 ####################################### Programa Principal ##############################
 
