@@ -16,7 +16,7 @@ def listar_coincidencias(resultados):
 
     if not resultados:
         print("\nNo hay coincidencias. ❌")
-        print("\n")
+        print()
         return
 
     # Encabezados (agregamos la columna de índice "#")
@@ -66,6 +66,7 @@ def elegir_de_lista(resultados):
 
     Devuelve:
         int | None: Índice (0-based) del libro seleccionado, o None si se cancela.
+        
     """
 
     print("\nCoincidencias encontradas:")
@@ -81,7 +82,7 @@ def elegir_de_lista(resultados):
 
 # Valida la seleccion y devuelve el indice de la misma
     while True:
-        print("\n")
+        print()
         seleccion = input(f"Elija 1-{len(resultados)} (o 0 para cancelar): ").strip()
 
         if seleccion == '0':
@@ -137,7 +138,7 @@ def prestar_libro(biblioteca):
     libro["estado"] = "Alquilado"
     print("\n✅ Préstamo registrado. Libro actualizado:")
     listar_libros([libro])
-    print("\n")
+    print()
 
 
 def devolver_libro(biblioteca):
