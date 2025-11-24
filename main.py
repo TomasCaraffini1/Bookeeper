@@ -1,47 +1,89 @@
-import json
 import os
+import json
 from libros.alta import alta_libro
-from libros.lista import listar_libros
-from libros.busca import buscar_libro
 from libros.alquiler import prestar_libro, devolver_libro
+from libros.busca import buscar_libro, mostrar_disponibles
+from libros.lista import listar_libros, mostrar_resumen_libros
+
+
+def limpiar_consola():
+    """
+    Limpia la consola realizando un salto grande de líneas.
+
+    Nota:
+        Debido a que el programa funciona en múltiples entornos
+        (Sistemas Operartivos / IDEs), esta técnica evita depender de
+        comandos específicos del sistema operativo.
+
+    """
+    
+    print("\n" * 100)
+
+def pausar():
+    """
+    Pausa la ejecución hasta que el usuario presione ENTER.
+
+    Después de confirmar, limpia la consola para mantener
+    una interfaz ordenada entre cada operación.
+
+    """
+    
+    input("\n👉 Presione ENTER para continuar... ✨")
+    limpiar_consola()
+
 
 def cargar_datos(archivo="datos.json"):
     """
-    Carga la lista de libros desde el archivo JSON especificado.
+    Carga los libros desde un archivo JSON.
+    Si el archivo no existe o está corrupto, devuelve una lista vacía.
+
+    Argumentos:
+        archivo (str): Nombre del archivo JSON.
+
+    Devuelve:
+        list[dict]: Lista de libros cargados.
+
     """
-    # Verifica si el archivo existe
     if not os.path.exists(archivo):
         print(f"⚠️ Advertencia: No se encontró '{archivo}'. Se creará uno nuevo al salir.")
-        return []  # Retorna una lista vacía si el archivo no existe
+        return [] # Retorna una lista vacía si el archivo no existe
 
     try:
         with open(archivo, 'r', encoding='utf-8') as f:
             # json.load() lee el archivo y convierte el JSON a una lista de Python
             datos = json.load(f)
             return datos
-            
+        
     except json.JSONDecodeError:
-        # Esto pasa si el archivo JSON está vacío o corrupto
         print(f"⚠️ Advertencia: El archivo '{archivo}' está vacío o malformado. Iniciando con lista vacía.")
         return []
 
+
 def guardar_datos(libros, archivo="datos.json"):
     """
-    Guarda la lista de libros (que está en Python) en el archivo JSON.
+    Guarda la lista de libros en un archivo JSON.
+
+    Argumentos:
+        libros (list[dict]): Lista completa de libros.
+        archivo (str): Nombre del archivo destino.
+
     """
     try:
         with open(archivo, 'w', encoding='utf-8') as f:
             # json.dump() convierte la lista de Python a formato JSON y la escribe
             # indent=4 hace que el archivo JSON sea legible
-            json.dump(libros, f, indent=4) 
+            json.dump(libros, f, indent=4)
         print(f"✅ Datos guardados exitosamente en '{archivo}'.")
     except Exception as e:
-        print(f"❌ Error al guardar los datos en '{archivo}': {e}")  
+        print(f"❌ Error al guardar los datos en '{archivo}': {e}")
+
 
 def mostrar_menu():
     """
-    Muestra el menú de opciones al usuario.
+    Muestra el menú principal del sistema Bookeeper.
+
     """
+
     print("========================================")
     print("📚BOOKEEPER")
     print("========================================")
@@ -50,25 +92,45 @@ def mostrar_menu():
     print("3. Buscar libro")
     print("4. Préstamo de libro")
     print("5. Devolución de libro")
-    print("6. Salir")
+    print("6. Ver libros disponibles")
+    print("7. Ver resumen de libros")
+    print("8. Salir")
     print("========================================")
 
-# lee y valida la opcion del usuario, retorna opcion valida entre 1 y 6
+
 def elegir_opcion():
+    """
+    Solicita y valida que el usuario elija una opción del menú principal.
+
+    Acepta únicamente números enteros entre 1 y 8.
+
+    Devuelve:
+        int: Opción seleccionada.
+
+    """
     while True:
         try:
-            opcion = int(input("Seleccione una opción (1-6): "))
-            if 1 <= opcion <= 6:
+            opcion = int(input("Seleccione una opción (1-8): "))
+            if 1 <= opcion <= 8: 
                 return opcion
-            else:
-                print("❌ Error: Ingrese un número entre 1 y 6.")
+            print("❌ Error: Ingrese un número entre 1 y 8.")
         except ValueError:
             print("❌ Error: Por favor ingrese un número entero.")
 
+
 def main():
-    # lista global de los libros
+    """
+    Función principal del programa.
+
+    Flujo:
+        1. Carga los datos desde el archivo.
+        2. Muestra el menú principal.
+        3. Ejecuta la acción elegida.
+        4. Guarda los datos al salir.
+        
+    """
     libros = cargar_datos("datos.json")
-    print(f"\nSistema iniciado. Se cargaron {len(libros)} libros desde datos.json.")
+    print(f"\nSistema iniciado. Se cargaron {len(libros)} libros desde datos.json.\n")
 
     while True:
         mostrar_menu()
@@ -76,20 +138,30 @@ def main():
 
         if opcion == 1:
             alta_libro(libros)
+            pausar()
         elif opcion == 2:
             listar_libros(libros)
+            pausar()
         elif opcion == 3:
             buscar_libro(libros)
+            pausar()
         elif opcion == 4:
             prestar_libro(libros)
+            pausar()
         elif opcion == 5:
             devolver_libro(libros)
+            pausar()
         elif opcion == 6:
+            mostrar_disponibles(libros)
+            pausar()
+        elif opcion == 7:
+            mostrar_resumen_libros(libros)
+            pausar()
+        elif opcion == 8:
             guardar_datos(libros, "datos.json")
-            print("\n")
-            print("Gracias por utilizar Bookeeper!👋")
-            print("\n")
+            print("\nGracias por utilizar Bookeeper!👋\n")
             break
+
 
 ####################################### Programa Principal ##############################
 
