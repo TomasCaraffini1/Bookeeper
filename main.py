@@ -6,6 +6,8 @@ from libros.busca import buscar_libro
 from libros.alquiler import prestar_libro, devolver_libro
 from libros.socios import registrar_socio, listar_socios
 from libros.historial import mostrar_historial
+from libros.historial import mostrar_historial_por_socio
+from libros.historial import mostrar_historial_libros
 
 def cargar_datos(archivo="datos.json"):
     """
@@ -70,8 +72,10 @@ def mostrar_menu():
     print("5. Devolución de libro")
     print("6. Registrar socio")
     print("7. Listar socios")
-    print("8. Ver historial de préstamos")
-    print("9. Salir")
+    print("8. Ver historial de préstamos (general)")
+    print("9. Ver historial por socio")
+    print("10. Ver historial por libro")
+    print("0. Salir")
     print("========================================")
 
 
@@ -79,11 +83,11 @@ def mostrar_menu():
 def elegir_opcion():
     while True:
         try:
-            opcion = int(input("Seleccione una opción (1-9): "))
-            if 1 <= opcion <= 9:
+            opcion = int(input("Seleccione una opción (0-10): "))
+            if 0 <= opcion <= 10:
                 return opcion
             else:
-                print("❌ Error: Ingrese un número entre 1 y 9.")
+                print("❌ Error: Ingrese un número entre 0 y 10.")
         except ValueError:
             print("❌ Error: Por favor ingrese un número entero.")
 
@@ -92,6 +96,18 @@ def main():
     libros = datos.get("libros", [])
     socios = datos.get("socios", [])
     historial = datos.get("historial", [])
+
+    # Asegurar campo de contador en libros
+    for libro in libros:
+        if "veces_alquilado" not in libro:
+            libro["veces_alquilado"] = 0
+
+    # Asegurar historial por socio
+    for socio in socios:
+        if "historial" not in socio:
+            socio["historial"] = []
+
+
 
     while True:
         mostrar_menu()
@@ -114,6 +130,10 @@ def main():
         elif opcion == 8:
             mostrar_historial(historial)
         elif opcion == 9:
+            mostrar_historial_por_socio(historial, socios)
+        elif opcion == 10:
+            mostrar_historial_libros(historial, libros)
+        elif opcion == 0:
             guardar_datos({"libros": libros, "socios": socios, "historial": historial}, "datos.json")
             print("\nGracias por utilizar Bookeeper!👋\n")
             break

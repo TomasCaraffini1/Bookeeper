@@ -103,10 +103,25 @@ def prestar_libro(biblioteca, socios, historial):
         print(f"❌ El libro está {libro['Estado']}.")
         return
 
+    # Cambiar estado del libro
     libro["Estado"] = "Alquilado"
+
+    # Sumar contador al libro
+    if "veces_alquilado" not in libro:
+        libro["veces_alquilado"] = 0
+    libro["veces_alquilado"] += 1
+
+    # Registrar historial EN EL SOCIO
+    if "historial" not in socio:
+        socio["historial"] = []
+    socio["historial"].append({
+        "Libro": libro["Título"],
+        "Estado": "Activo"
+    })
+
+    # Mantener historial global (si querés)
     registrar_prestamo(historial, dni, libro["Título"])
-    print(f"\n✅ {socio['Nombre']} ha alquilado '{libro['Título']}'.")
-    listar_libros([libro])
+
 
 def devolver_libro(biblioteca, socios, historial):
     if not biblioteca:
@@ -134,6 +149,13 @@ def devolver_libro(biblioteca, socios, historial):
         return
 
     libro["Estado"] = "Disponible"
+    if "historial" not in socio:
+        socio["historial"] = []
+    socio["historial"].append({
+        "Libro": libro["Título"],
+        "Estado": "Devuelto"
+    })
+
     registrar_devolucion(historial, dni, libro["Título"])
-    print(f"\n✅ {socio['Nombre']} devolvió '{libro['Título']}'.")
-    listar_libros([libro])
+
+
