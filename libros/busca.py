@@ -22,6 +22,20 @@ CRITERIOS = {
     }
 }
 
+def obtener_disponibles(biblioteca):
+    """
+    Obtiene todos los libros con estado "Disponible".
+
+    Argumentos:
+        biblioteca (list[dict]): Lista de libros cargados.
+
+    Devuelve:
+        list[dict]: Libros cuyo estado es "Disponible".
+    
+    """
+
+    return list(filter(lambda libro: libro["estado"].lower() == "disponible", biblioteca))
+
 
 def normalizar(valor):
     """
@@ -32,6 +46,7 @@ def normalizar(valor):
 
     Devuelve:
         str: Texto normalizado.
+
     """
 
     return valor.strip().lower()
@@ -90,7 +105,6 @@ def buscar_libro(biblioteca):
 
     Argumentos:
         biblioteca (list[dict]): Lista de libros cargados.
-
     """
     if not biblioteca:
         print("\nNo hay libros cargados.")
@@ -114,4 +128,20 @@ def buscar_libro(biblioteca):
     
     # Reusa el mismo formato de impresión
     listar_libros(resultados)
-    print("\n")
+    print()
+
+def mostrar_disponibles(biblioteca):
+    """
+    Muestra en pantalla únicamente los libros cuyo estado es "Disponible".
+
+    Reutiliza la función `listar_libros()` para mantener el mismo
+    formato de tabla en la impresión.
+
+    Argumentos:
+        biblioteca (list[dict]): Lista de libros almacenados.
+    
+    """
+
+    disponibles = obtener_disponibles(biblioteca)
+
+    listar_libros(disponibles)
