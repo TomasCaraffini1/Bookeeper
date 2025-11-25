@@ -1,6 +1,6 @@
-from .lista import listar_libros     # Reutiliza la lógica de impresión
-from .busca import pedir_y_filtrar   # Reutiliza la lógica de búsqueda
-
+from .lista import listar_libros     # Reutiliza la logica de impresion
+from .busca import pedir_y_filtrar   # Reutiliza la logica de busqueda
+from .historial import registrar_prestamo, registrar_devolucion
 
 def listar_coincidencias(resultados):
     """
@@ -97,7 +97,8 @@ def elegir_de_lista(resultados):
         print(f"Selección inválida. Ingrese un número entre 1 y {len(resultados)}.")
 
 
-def prestar_libro(biblioteca):
+# Funciones específicas
+def prestar_libro(biblioteca, socios, historial):
     """
     Realiza el préstamo de un libro, cambiando su estado a "Alquilado".
 
@@ -108,9 +109,17 @@ def prestar_libro(biblioteca):
         biblioteca (list[dict]): Lista completa de libros cargados.
 
     """
-
     if not biblioteca:
         print("\nNo hay libros cargados.")
+        return
+    if not socios:
+        print("\nNo hay socios registrados. Registre uno antes de prestar.")
+        return
+
+    dni = input("Ingrese el DNI del socio: ").strip()
+    socio = next((s for s in socios if s["DNI"] == dni), None)
+    if not socio:
+        print("❌ Socio no encontrado.")
         return
 
     resultados = pedir_y_filtrar(biblioteca)
@@ -120,28 +129,35 @@ def prestar_libro(biblioteca):
         return
 
     indice = elegir_de_lista(resultados)
-
-    # Si el índice es None (porque no hubo resultados o se canceló),
-    # detenemos la función aquí y volvemos al menú.
     if indice is None:
         return
 
     libro = resultados[indice]
-
-    # Valida que este Disponible
-    estado_actual = libro.get("estado", "")
-    if estado_actual.lower() != "disponible".lower():
-        print(f"\nNo se puede prestar. El libro está: {estado_actual}")
-        print("Solo se pueden prestar libros disponibles.")
+    if libro["estado"].lower() != "disponible":
+        print(f"❌ El libro está {libro['estado']}.")
         return
 
+    # Cambiar estado del libro
     libro["estado"] = "Alquilado"
-    print("\n✅ Préstamo registrado. Libro actualizado:")
-    listar_libros([libro])
-    print()
+
+    # Sumar contador al libro
+    if "veces_alquilado" not in libro:
+        libro["veces_alquilado"] = 0
+    libro["veces_alquilado"] += 1
+
+    # Registrar historial EN EL SOCIO
+    if "historial" not in socio:
+        socio["historial"] = []
+    socio["historial"].append({
+        "Libro": libro["titulo"],
+        "estado": "Activo"
+    })
+
+    # Mantener historial global (si querés)
+    registrar_prestamo(historial, dni, libro["titulo"])
 
 
-def devolver_libro(biblioteca):
+def devolver_libro(biblioteca, socios, historial):
     """
     Registra la devolución de un libro, cambiando su estado a "Disponible".
 
@@ -149,9 +165,17 @@ def devolver_libro(biblioteca):
         biblioteca (list[dict]): Lista completa de libros cargados.
 
     """
-
     if not biblioteca:
         print("\nNo hay libros cargados.")
+        return
+    if not socios:
+        print("\nNo hay socios registrados.")
+        return
+        
+    dni = input("Ingrese el DNI del socio: ").strip()
+    socio = next((s for s in socios if s["DNI"] == dni), None)
+    if not socio:
+        print("❌ Socio no encontrado.")
         return
 
     resultados = pedir_y_filtrar(biblioteca)
@@ -161,20 +185,23 @@ def devolver_libro(biblioteca):
         return
 
     indice = elegir_de_lista(resultados)
-
-    # Aplicamos la misma validación que en prestar_libro
     if indice is None:
         return
 
     libro = resultados[indice]
-
-    # Valida que este Alquilado
-    estado_actual = libro.get("estado", "")
-    if estado_actual.lower() != "alquilado".lower():
-        print(f"\nNo se puede devolver. El libro está: {estado_actual}")
-        print("Solo se pueden devolver libros alquilados.")
+    
+    if libro["estado"].lower() != "alquilado":
+        print(f"❌ El libro está {libro['estado']}.")
         return
 
     libro["estado"] = "Disponible"
-    print("\n✅ Devolución registrada. Libro actualizado:")
-    listar_libros([libro])
+    if "historial" not in socio:
+        socio["historial"] = []
+    socio["historial"].append({
+        "Libro": libro["titulo"],
+        "estado": "Devuelto"
+    })
+
+    registrar_devolucion(historial, dni, libro["titulo"])
+
+

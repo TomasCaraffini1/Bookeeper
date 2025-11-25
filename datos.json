@@ -1,744 +1,907 @@
-[
-    {
-        "titulo": "Cien A\u00f1os de Soledad",
-        "autor": "Gabriel Garc\u00eda M\u00e1rquez",
-        "genero": "Realismo M\u00e1gico",
-        "anio": 1967,
-        "estado": "Disponible"
-    },
-    {
-        "titulo": "1984",
-        "autor": "George Orwell",
-        "genero": "Distop\u00eda",
-        "anio": 1949,
-        "estado": "Alquilado"
-    },
-    {
-        "titulo": "Don Quijote de la Mancha",
-        "autor": "Miguel de Cervantes",
-        "genero": "Novela",
-        "anio": 1605,
-        "estado": "Disponible"
-    },
-    {
-        "titulo": "Rayuela",
-        "autor": "Julio Cort\u00e1zar",
-        "genero": "Experimental",
-        "anio": 1963,
-        "estado": "Disponible"
-    },
-    {
-        "titulo": "La Ciudad y los Perros",
-        "autor": "Mario Vargas Llosa",
-        "genero": "Novela",
-        "anio": 1963,
-        "estado": "Alquilado"
-    },
-    {
-        "titulo": "El Nombre de la Rosa",
-        "autor": "Umberto Eco",
-        "genero": "Misterio Hist\u00f3rico",
-        "anio": 1980,
-        "estado": "Disponible"
-    },
-    {
-        "titulo": "Crimen y Castigo",
-        "autor": "Fi\u00f3dor Dostoyevski",
-        "genero": "Filos\u00f3fica",
-        "anio": 1866,
-        "estado": "Disponible"
-    },
-    {
-        "titulo": "El Gran Gatsby",
-        "autor": "F. Scott Fitzgerald",
-        "genero": "Cl\u00e1sico Moderno",
-        "anio": 1925,
-        "estado": "Alquilado"
-    },
-    {
-        "titulo": "Matar a un Ruise\u00f1or",
-        "autor": "Harper Lee",
-        "genero": "Ficci\u00f3n Social",
-        "anio": 1960,
-        "estado": "Disponible"
-    },
-    {
-        "titulo": "Orgullo y Prejuicio",
-        "autor": "Jane Austen",
-        "genero": "Romance Cl\u00e1sico",
-        "anio": 1813,
-        "estado": "Disponible"
-    },
-    {
-        "titulo": "El Hobbit",
-        "autor": "J.R.R. Tolkien",
-        "genero": "Fantas\u00eda",
-        "anio": 1937,
-        "estado": "Alquilado"
-    },
-    {
-        "titulo": "Guerra y Paz",
-        "autor": "Le\u00f3n Tolst\u00f3i",
-        "genero": "Novela Hist\u00f3rica",
-        "anio": 1869,
-        "estado": "Disponible"
-    },
-    {
-        "titulo": "Hamlet",
-        "autor": "William Shakespeare",
-        "genero": "Tragedia",
-        "anio": 1603,
-        "estado": "Disponible"
-    },
-    {
-        "titulo": "Frankenstein",
-        "autor": "Mary Shelley",
-        "genero": "Ciencia Ficci\u00f3n Cl\u00e1sica",
-        "anio": 1818,
-        "estado": "Alquilado"
-    },
-    {
-        "titulo": "Dr\u00e1cula",
-        "autor": "Bram Stoker",
-        "genero": "Terror G\u00f3tico",
-        "anio": 1897,
-        "estado": "Disponible"
-    },
-    {
-        "titulo": "Las Aventuras de Tom Sawyer",
-        "autor": "Mark Twain",
-        "genero": "Juvenil",
-        "anio": 1876,
-        "estado": "Disponible"
-    },
-    {
-        "titulo": "El Retrato de Dorian Gray",
-        "autor": "Oscar Wilde",
-        "genero": "Filos\u00f3fica",
-        "anio": 1890,
-        "estado": "Disponible"
-    },
-    {
-        "titulo": "Alicia en el Pa\u00eds de las Maravillas",
-        "autor": "Lewis Carroll",
-        "genero": "Fantas\u00eda",
-        "anio": 1865,
-        "estado": "Alquilado"
-    },
-    {
-        "titulo": "Veinte Mil Leguas de Viaje Submarino",
-        "autor": "Julio Verne",
-        "genero": "Aventura",
-        "anio": 1870,
-        "estado": "Disponible"
-    },
-    {
-        "titulo": "La Vuelta al Mundo en Ochenta D\u00edas",
-        "autor": "Julio Verne",
-        "genero": "Aventura",
-        "anio": 1873,
-        "estado": "Disponible"
-    },
-    {
-        "titulo": "El Principito",
-        "autor": "Antoine de Saint-Exup\u00e9ry",
-        "genero": "F\u00e1bula",
-        "anio": 1943,
-        "estado": "Disponible"
-    },
-    {
-        "titulo": "La Metamorfosis",
-        "autor": "Franz Kafka",
-        "genero": "Ficci\u00f3n",
-        "anio": 1915,
-        "estado": "Alquilado"
-    },
-    {
-        "titulo": "Madame Bovary",
-        "autor": "Gustave Flaubert",
-        "genero": "Realismo",
-        "anio": 1856,
-        "estado": "Disponible"
-    },
-    {
-        "titulo": "Los Miserables",
-        "autor": "Victor Hugo",
-        "genero": "Novela Social",
-        "anio": 1862,
-        "estado": "Disponible"
-    },
-    {
-        "titulo": "Jane Eyre",
-        "autor": "Charlotte Bront\u00eb",
-        "genero": "G\u00f3tico",
-        "anio": 1847,
-        "estado": "Disponible"
-    },
-    {
-        "titulo": "Cumbres Borrascosas",
-        "autor": "Emily Bront\u00eb",
-        "genero": "Romance G\u00f3tico",
-        "anio": 1847,
-        "estado": "Alquilado"
-    },
-    {
-        "titulo": "Un Mundo Feliz",
-        "autor": "Aldous Huxley",
-        "genero": "Distop\u00eda",
-        "anio": 1932,
-        "estado": "Disponible"
-    },
-    {
-        "titulo": "Fahrenheit 451",
-        "autor": "Ray Bradbury",
-        "genero": "Ciencia Ficci\u00f3n",
-        "anio": 1953,
-        "estado": "Disponible"
-    },
-    {
-        "titulo": "Siddhartha",
-        "autor": "Hermann Hesse",
-        "genero": "Filos\u00f3fica",
-        "anio": 1922,
-        "estado": "Disponible"
-    },
-    {
-        "titulo": "El Lobo Estepario",
-        "autor": "Hermann Hesse",
-        "genero": "Novela",
-        "anio": 1927,
-        "estado": "Alquilado"
-    },
-    {
-        "titulo": "Ulises",
-        "autor": "James Joyce",
-        "genero": "Modernismo",
-        "anio": 1922,
-        "estado": "Disponible"
-    },
-    {
-        "titulo": "El Viejo y el Mar",
-        "autor": "Ernest Hemingway",
-        "genero": "Cl\u00e1sico",
-        "anio": 1952,
-        "estado": "Disponible"
-    },
-    {
-        "titulo": "Las Uvas de la Ira",
-        "autor": "John Steinbeck",
-        "genero": "Realismo Social",
-        "anio": 1939,
-        "estado": "Disponible"
-    },
-    {
-        "titulo": "De Ratones y Hombres",
-        "autor": "John Steinbeck",
-        "genero": "Tragedia",
-        "anio": 1937,
-        "estado": "Alquilado"
-    },
-    {
-        "titulo": "El Extra\u00f1o Caso del Dr. Jekyll y Mr. Hyde",
-        "autor": "Robert Louis Stevenson",
-        "genero": "Novela G\u00f3tica",
-        "anio": 1886,
-        "estado": "Disponible"
-    },
-    {
-        "titulo": "La Isla del Tesoro",
-        "autor": "Robert Louis Stevenson",
-        "genero": "Aventura",
-        "anio": 1883,
-        "estado": "Disponible"
-    },
-    {
-        "titulo": "El Conde de Montecristo",
-        "autor": "Alexandre Dumas",
-        "genero": "Aventura",
-        "anio": 1844,
-        "estado": "Disponible"
-    },
-    {
-        "titulo": "Los Tres Mosqueteros",
-        "autor": "Alexandre Dumas",
-        "genero": "Aventura",
-        "anio": 1844,
-        "estado": "Alquilado"
-    },
-    {
-        "titulo": "El Padrino",
-        "autor": "Mario Puzo",
-        "genero": "Novela Negra",
-        "anio": 1969,
-        "estado": "Disponible"
-    },
-    {
-        "titulo": "IT (Eso)",
-        "autor": "Stephen King",
-        "genero": "Terror",
-        "anio": 1986,
-        "estado": "Disponible"
-    },
-    {
-        "titulo": "Carrie",
-        "autor": "Stephen King",
-        "genero": "Terror",
-        "anio": 1974,
-        "estado": "Disponible"
-    },
-    {
-        "titulo": "El C\u00f3digo Da Vinci",
-        "autor": "Dan Brown",
-        "genero": "Thriller",
-        "anio": 2003,
-        "estado": "Alquilado"
-    },
-    {
-        "titulo": "El Perfume",
-        "autor": "Patrick S\u00fcskind",
-        "genero": "Ficci\u00f3n Hist\u00f3rica",
-        "anio": 1985,
-        "estado": "Disponible"
-    },
-    {
-        "titulo": "La Sombra del Viento",
-        "autor": "Carlos Ruiz Zaf\u00f3n",
-        "genero": "Misterio",
-        "anio": 2001,
-        "estado": "Disponible"
-    },
-    {
-        "titulo": "La Casa de los Esp\u00edritus",
-        "autor": "Isabel Allende",
-        "genero": "Realismo M\u00e1gico",
-        "anio": 1982,
-        "estado": "Disponible"
-    },
-    {
-        "titulo": "Ensayo sobre la Ceguera",
-        "autor": "Jos\u00e9 Saramago",
-        "genero": "Alegor\u00eda",
-        "anio": 1995,
-        "estado": "Alquilado"
-    },
-    {
-        "titulo": "El Psicoanalista",
-        "autor": "John Katzenbach",
-        "genero": "Thriller Psicol\u00f3gico",
-        "anio": 2002,
-        "estado": "Disponible"
-    },
-    {
-        "titulo": "El Nombre del Viento",
-        "autor": "Patrick Rothfuss",
-        "genero": "Fantas\u00eda \u00c9pica",
-        "anio": 2007,
-        "estado": "Disponible"
-    },
-    {
-        "titulo": "Juego de Tronos",
-        "autor": "George R.R. Martin",
-        "genero": "Fantas\u00eda \u00c9pica",
-        "anio": 1996,
-        "estado": "Disponible"
-    },
-    {
-        "titulo": "El \u00daltimo Deseo (Geralt de Rivia)",
-        "autor": "Andrzej Sapkowski",
-        "genero": "Fantas\u00eda",
-        "anio": 1993,
-        "estado": "Alquilado"
-    },
-    {
-        "titulo": "Dune",
-        "autor": "Frank Herbert",
-        "genero": "Ciencia Ficci\u00f3n",
-        "anio": 1965,
-        "estado": "Disponible"
-    },
-    {
-        "titulo": "Yo, Robot",
-        "autor": "Isaac Asimov",
-        "genero": "Ciencia Ficci\u00f3n",
-        "anio": 1950,
-        "estado": "Disponible"
-    },
-    {
-        "titulo": "Fundaci\u00f3n",
-        "autor": "Isaac Asimov",
-        "genero": "Ciencia Ficci\u00f3n",
-        "anio": 1951,
-        "estado": "Disponible"
-    },
-    {
-        "titulo": "Neuromante",
-        "autor": "William Gibson",
-        "genero": "Cyberpunk",
-        "anio": 1984,
-        "estado": "Alquilado"
-    },
-    {
-        "titulo": "El Resplandor",
-        "autor": "Stephen King",
-        "genero": "Terror",
-        "anio": 1977,
-        "estado": "Disponible"
-    },
-    {
-        "titulo": "La Chica del Tren",
-        "autor": "Paula Hawkins",
-        "genero": "Misterio",
-        "anio": 2015,
-        "estado": "Disponible"
-    },
-    {
-        "titulo": "Perdida",
-        "autor": "Gillian Flynn",
-        "genero": "Thriller",
-        "anio": 2012,
-        "estado": "Disponible"
-    },
-    {
-        "titulo": "El Silencio de los Corderos",
-        "autor": "Thomas Harris",
-        "genero": "Thriller",
-        "anio": 1988,
-        "estado": "Alquilado"
-    },
-    {
-        "titulo": "El Alquimista",
-        "autor": "Paulo Coelho",
-        "genero": "Ficci\u00f3n",
-        "anio": 1988,
-        "estado": "Disponible"
-    },
-    {
-        "titulo": "El Guardi\u00e1n entre el Centeno",
-        "autor": "J.D. Salinger",
-        "genero": "Ficci\u00f3n Juvenil",
-        "anio": 1951,
-        "estado": "Disponible"
-    },
-    {
-        "titulo": "Sapiens: De animales a dioses",
-        "autor": "Yuval Noah Harari",
-        "genero": "No Ficci\u00f3n",
-        "anio": 2011,
-        "estado": "Disponible"
-    },
-    {
-        "titulo": "Una Breve Historia del Tiempo",
-        "autor": "Stephen Hawking",
-        "genero": "Ciencia",
-        "anio": 1988,
-        "estado": "Alquilado"
-    },
-    {
-        "titulo": "Cosmos",
-        "autor": "Carl Sagan",
-        "genero": "Ciencia",
-        "anio": 1980,
-        "estado": "Disponible"
-    },
-    {
-        "titulo": "La Carretera",
-        "autor": "Cormac McCarthy",
-        "genero": "Post-apocal\u00edptica",
-        "anio": 2006,
-        "estado": "Disponible"
-    },
-    {
-        "titulo": "Meridiano de Sangre",
-        "autor": "Cormac McCarthy",
-        "genero": "Western",
-        "anio": 1985,
-        "estado": "Disponible"
-    },
-    {
-        "titulo": "Poeta en Nueva York",
-        "autor": "Federico Garc\u00eda Lorca",
-        "genero": "Poes\u00eda",
-        "anio": 1940,
-        "estado": "Alquilado"
-    },
-    {
-        "titulo": "2666",
-        "autor": "Roberto Bola\u00f1o",
-        "genero": "Novela",
-        "anio": 2004,
-        "estado": "Disponible"
-    },
-    {
-        "titulo": "Los Detectives Salvajes",
-        "autor": "Roberto Bola\u00f1o",
-        "genero": "Novela",
-        "anio": 1998,
-        "estado": "Disponible"
-    },
-    {
-        "titulo": "Veinte Poemas de Amor",
-        "autor": "Pablo Neruda",
-        "genero": "Poes\u00eda",
-        "anio": 1924,
-        "estado": "Disponible"
-    },
-    {
-        "titulo": "El Laberinto de la Soledad",
-        "autor": "Octavio Paz",
-        "genero": "Ensayo",
-        "anio": 1950,
-        "estado": "Disponible"
-    },
-    {
-        "titulo": "Pedro P\u00e1ramo",
-        "autor": "Juan Rulfo",
-        "genero": "Realismo M\u00e1gico",
-        "anio": 1955,
-        "estado": "Alquilado"
-    },
-    {
-        "titulo": "Ficciones",
-        "autor": "Jorge Luis Borges",
-        "genero": "Cuentos",
-        "anio": 1944,
-        "estado": "Disponible"
-    },
-    {
-        "titulo": "El Aleph",
-        "autor": "Jorge Luis Borges",
-        "genero": "Cuentos",
-        "anio": 1949,
-        "estado": "Disponible"
-    },
-    {
-        "titulo": "Historias de Cronopios y de Famas",
-        "autor": "Julio Cort\u00e1zar",
-        "genero": "Cuentos Cortos",
-        "anio": 1962,
-        "estado": "Disponible"
-    },
-    {
-        "titulo": "La Tregua",
-        "autor": "Mario Benedetti",
-        "genero": "Novela",
-        "anio": 1960,
-        "estado": "Alquilado"
-    },
-    {
-        "titulo": "El T\u00fanel",
-        "autor": "Ernesto S\u00e1bato",
-        "genero": "Novela Psicol\u00f3gica",
-        "anio": 1948,
-        "estado": "Disponible"
-    },
-    {
-        "titulo": "El Proceso",
-        "autor": "Franz Kafka",
-        "genero": "Absurdo",
-        "anio": 1925,
-        "estado": "Disponible"
-    },
-    {
-        "titulo": "El Castillo",
-        "autor": "Franz Kafka",
-        "genero": "Absurdo",
-        "anio": 1926,
-        "estado": "Disponible"
-    },
-    {
-        "titulo": "Bodas de Sangre",
-        "autor": "Federico Garc\u00eda Lorca",
-        "genero": "Teatro",
-        "anio": 1933,
-        "estado": "Alquilado"
-    },
-    {
-        "titulo": "Meditaciones",
-        "autor": "Marco Aurelio",
-        "genero": "Filosof\u00eda",
-        "anio": 180,
-        "estado": "Disponible"
-    },
-    {
-        "titulo": "La Divina Comedia",
-        "autor": "Dante Alighieri",
-        "genero": "Poes\u00eda \u00c9pica",
-        "anio": 1320,
-        "estado": "Disponible"
-    },
-    {
-        "titulo": "Decamer\u00f3n",
-        "autor": "Giovanni Boccaccio",
-        "genero": "Cuentos",
-        "anio": 1353,
-        "estado": "Alquilado"
-    },
-    {
-        "titulo": "El Pr\u00edncipe",
-        "autor": "Nicol\u00e1s Maquiavelo",
-        "genero": "Ensayo Pol\u00edtico",
-        "anio": 1532,
-        "estado": "Disponible"
-    },
-    {
-        "titulo": "Utop\u00eda",
-        "autor": "Tom\u00e1s Moro",
-        "genero": "Filosof\u00eda",
-        "anio": 1516,
-        "estado": "Disponible"
-    },
-    {
-        "titulo": "Los Viajes de Gulliver",
-        "autor": "Jonathan Swift",
-        "genero": "S\u00e1tira",
-        "anio": 1726,
-        "estado": "Disponible"
-    },
-    {
-        "titulo": "Sentido y Sensibilidad",
-        "autor": "Jane Austen",
-        "genero": "Romance Cl\u00e1sico",
-        "anio": 1811,
-        "estado": "Disponible"
-    },
-    {
-        "titulo": "Ivanhoe",
-        "autor": "Walter Scott",
-        "genero": "Novela Hist\u00f3rica",
-        "anio": 1819,
-        "estado": "Alquilado"
-    },
-    {
-        "titulo": "Mujercitas",
-        "autor": "Louisa May Alcott",
-        "genero": "Juvenil",
-        "anio": 1868,
-        "estado": "Disponible"
-    },
-    {
-        "titulo": "Anna Karenina",
-        "autor": "Le\u00f3n Tolst\u00f3i",
-        "genero": "Realismo",
-        "anio": 1877,
-        "estado": "Disponible"
-    },
-    {
-        "titulo": "La Guerra de los Mundos",
-        "autor": "H. G. Wells",
-        "genero": "Ciencia Ficci\u00f3n",
-        "anio": 1898,
-        "estado": "Disponible"
-    },
-    {
-        "titulo": "El Llamado de lo Salvaje",
-        "autor": "Jack London",
-        "genero": "Aventura",
-        "anio": 1903,
-        "estado": "Alquilado"
-    },
-    {
-        "titulo": "El Jard\u00edn Secreto",
-        "autor": "Frances Hodgson Burnett",
-        "genero": "Juvenil",
-        "anio": 1911,
-        "estado": "Disponible"
-    },
-    {
-        "titulo": "Peter Pan",
-        "autor": "J. M. Barrie",
-        "genero": "Fantas\u00eda Juvenil",
-        "anio": 1911,
-        "estado": "Disponible"
-    },
-    {
-        "titulo": "Tarz\u00e1n de los Monos",
-        "autor": "Edgar Rice Burroughs",
-        "genero": "Aventura",
-        "anio": 1912,
-        "estado": "Disponible"
-    },
-    {
-        "titulo": "El Castillo de Otranto",
-        "autor": "Horace Walpole",
-        "genero": "Novela G\u00f3tica",
-        "anio": 1764,
-        "estado": "Disponible"
-    },
-    {
-        "titulo": "Las Flores del Mal",
-        "autor": "Charles Baudelaire",
-        "genero": "Poes\u00eda",
-        "anio": 1857,
-        "estado": "Alquilado"
-    },
-    {
-        "titulo": "Rimas y Leyendas",
-        "autor": "Gustavo Adolfo B\u00e9cquer",
-        "genero": "Poes\u00eda Rom\u00e1ntica",
-        "anio": 1871,
-        "estado": "Disponible"
-    },
-    {
-        "titulo": "La Regenta",
-        "autor": "Leopoldo Alas Clar\u00edn",
-        "genero": "Realismo",
-        "anio": 1884,
-        "estado": "Disponible"
-    },
-    {
-        "titulo": "Fortunata y Jacinta",
-        "autor": "Benito P\u00e9rez Gald\u00f3s",
-        "genero": "Realismo",
-        "anio": 1887,
-        "estado": "Disponible"
-    },
-    {
-        "titulo": "Niebla",
-        "autor": "Miguel de Unamuno",
-        "genero": "Novela",
-        "anio": 1914,
-        "estado": "Disponible"
-    },
-    {
-        "titulo": "Platero y Yo",
-        "autor": "Juan Ram\u00f3n Jim\u00e9nez",
-        "genero": "Prosa L\u00edrica",
-        "anio": 1914,
-        "estado": "Alquilado"
-    },
-    {
-        "titulo": "El \u00c1rbol de la Ciencia",
-        "autor": "P\u00edo Baroja",
-        "genero": "Novela",
-        "anio": 1911,
-        "estado": "Disponible"
-    },
-    {
-        "titulo": "Tirano Banderas",
-        "autor": "Ram\u00f3n del Valle-Incl\u00e1n",
-        "genero": "Esperpento",
-        "anio": 1926,
-        "estado": "Disponible"
-    },
-    {
-        "titulo": "La Peste",
-        "autor": "Albert Camus",
-        "genero": "Existencialismo",
-        "anio": 1947,
-        "estado": "Disponible"
-    },
-    {
-        "titulo": "El Extranjero",
-        "autor": "Albert Camus",
-        "genero": "Existencialismo",
-        "anio": 1942,
-        "estado": "Disponible"
-    },
-    {
-        "titulo": "El Genio Maligno",
-        "autor": "Ren\u00e9 Descartes",
-        "genero": "Filosof\u00eda",
-        "anio": 1641,
-        "estado": "Alquilado"
-    }
-]
+{
+    "libros": [
+        {
+            "titulo": "Cien A\u00f1os de Soledad",
+            "autor": "Gabriel Garc\u00eda M\u00e1rquez",
+            "genero": "Realismo M\u00e1gico",
+            "anio": 1967,
+            "estado": "Disponible",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "1984",
+            "autor": "George Orwell",
+            "genero": "Distop\u00eda",
+            "anio": 1949,
+            "estado": "Alquilado",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "Don Quijote de la Mancha",
+            "autor": "Miguel de Cervantes",
+            "genero": "Novela",
+            "anio": 1605,
+            "estado": "Disponible",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "Rayuela",
+            "autor": "Julio Cort\u00e1zar",
+            "genero": "Experimental",
+            "anio": 1963,
+            "estado": "Disponible",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "La Ciudad y los Perros",
+            "autor": "Mario Vargas Llosa",
+            "genero": "Novela",
+            "anio": 1963,
+            "estado": "Alquilado",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "El Nombre de la Rosa",
+            "autor": "Umberto Eco",
+            "genero": "Misterio Hist\u00f3rico",
+            "anio": 1980,
+            "estado": "Disponible",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "Crimen y Castigo",
+            "autor": "Fi\u00f3dor Dostoyevski",
+            "genero": "Filos\u00f3fica",
+            "anio": 1866,
+            "estado": "Disponible",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "El Gran Gatsby",
+            "autor": "F. Scott Fitzgerald",
+            "genero": "Cl\u00e1sico Moderno",
+            "anio": 1925,
+            "estado": "Alquilado",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "Matar a un Ruise\u00f1or",
+            "autor": "Harper Lee",
+            "genero": "Ficci\u00f3n Social",
+            "anio": 1960,
+            "estado": "Disponible",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "Orgullo y Prejuicio",
+            "autor": "Jane Austen",
+            "genero": "Romance Cl\u00e1sico",
+            "anio": 1813,
+            "estado": "Disponible",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "El Hobbit",
+            "autor": "J.R.R. Tolkien",
+            "genero": "Fantas\u00eda",
+            "anio": 1937,
+            "estado": "Alquilado",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "Guerra y Paz",
+            "autor": "Le\u00f3n Tolst\u00f3i",
+            "genero": "Novela Hist\u00f3rica",
+            "anio": 1869,
+            "estado": "Disponible",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "Hamlet",
+            "autor": "William Shakespeare",
+            "genero": "Tragedia",
+            "anio": 1603,
+            "estado": "Disponible",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "Frankenstein",
+            "autor": "Mary Shelley",
+            "genero": "Ciencia Ficci\u00f3n Cl\u00e1sica",
+            "anio": 1818,
+            "estado": "Alquilado",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "Dr\u00e1cula",
+            "autor": "Bram Stoker",
+            "genero": "Terror G\u00f3tico",
+            "anio": 1897,
+            "estado": "Disponible",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "Las Aventuras de Tom Sawyer",
+            "autor": "Mark Twain",
+            "genero": "Juvenil",
+            "anio": 1876,
+            "estado": "Disponible",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "El Retrato de Dorian Gray",
+            "autor": "Oscar Wilde",
+            "genero": "Filos\u00f3fica",
+            "anio": 1890,
+            "estado": "Disponible",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "Alicia en el Pa\u00eds de las Maravillas",
+            "autor": "Lewis Carroll",
+            "genero": "Fantas\u00eda",
+            "anio": 1865,
+            "estado": "Alquilado",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "Veinte Mil Leguas de Viaje Submarino",
+            "autor": "Julio Verne",
+            "genero": "Aventura",
+            "anio": 1870,
+            "estado": "Disponible",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "La Vuelta al Mundo en Ochenta D\u00edas",
+            "autor": "Julio Verne",
+            "genero": "Aventura",
+            "anio": 1873,
+            "estado": "Disponible",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "El Principito",
+            "autor": "Antoine de Saint-Exup\u00e9ry",
+            "genero": "F\u00e1bula",
+            "anio": 1943,
+            "estado": "Disponible",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "La Metamorfosis",
+            "autor": "Franz Kafka",
+            "genero": "Ficci\u00f3n",
+            "anio": 1915,
+            "estado": "Alquilado",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "Madame Bovary",
+            "autor": "Gustave Flaubert",
+            "genero": "Realismo",
+            "anio": 1856,
+            "estado": "Disponible",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "Los Miserables",
+            "autor": "Victor Hugo",
+            "genero": "Novela Social",
+            "anio": 1862,
+            "estado": "Disponible",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "Jane Eyre",
+            "autor": "Charlotte Bront\u00eb",
+            "genero": "G\u00f3tico",
+            "anio": 1847,
+            "estado": "Disponible",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "Cumbres Borrascosas",
+            "autor": "Emily Bront\u00eb",
+            "genero": "Romance G\u00f3tico",
+            "anio": 1847,
+            "estado": "Alquilado",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "Un Mundo Feliz",
+            "autor": "Aldous Huxley",
+            "genero": "Distop\u00eda",
+            "anio": 1932,
+            "estado": "Disponible",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "Fahrenheit 451",
+            "autor": "Ray Bradbury",
+            "genero": "Ciencia Ficci\u00f3n",
+            "anio": 1953,
+            "estado": "Disponible",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "Siddhartha",
+            "autor": "Hermann Hesse",
+            "genero": "Filos\u00f3fica",
+            "anio": 1922,
+            "estado": "Disponible",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "El Lobo Estepario",
+            "autor": "Hermann Hesse",
+            "genero": "Novela",
+            "anio": 1927,
+            "estado": "Alquilado",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "Ulises",
+            "autor": "James Joyce",
+            "genero": "Modernismo",
+            "anio": 1922,
+            "estado": "Disponible",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "El Viejo y el Mar",
+            "autor": "Ernest Hemingway",
+            "genero": "Cl\u00e1sico",
+            "anio": 1952,
+            "estado": "Disponible",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "Las Uvas de la Ira",
+            "autor": "John Steinbeck",
+            "genero": "Realismo Social",
+            "anio": 1939,
+            "estado": "Disponible",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "De Ratones y Hombres",
+            "autor": "John Steinbeck",
+            "genero": "Tragedia",
+            "anio": 1937,
+            "estado": "Alquilado",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "El Extra\u00f1o Caso del Dr. Jekyll y Mr. Hyde",
+            "autor": "Robert Louis Stevenson",
+            "genero": "Novela G\u00f3tica",
+            "anio": 1886,
+            "estado": "Disponible",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "La Isla del Tesoro",
+            "autor": "Robert Louis Stevenson",
+            "genero": "Aventura",
+            "anio": 1883,
+            "estado": "Disponible",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "El Conde de Montecristo",
+            "autor": "Alexandre Dumas",
+            "genero": "Aventura",
+            "anio": 1844,
+            "estado": "Disponible",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "Los Tres Mosqueteros",
+            "autor": "Alexandre Dumas",
+            "genero": "Aventura",
+            "anio": 1844,
+            "estado": "Alquilado",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "El Padrino",
+            "autor": "Mario Puzo",
+            "genero": "Novela Negra",
+            "anio": 1969,
+            "estado": "Disponible",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "IT (Eso)",
+            "autor": "Stephen King",
+            "genero": "Terror",
+            "anio": 1986,
+            "estado": "Alquilado",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "Carrie",
+            "autor": "Stephen King",
+            "genero": "Terror",
+            "anio": 1974,
+            "estado": "Disponible",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "El C\u00f3digo Da Vinci",
+            "autor": "Dan Brown",
+            "genero": "Thriller",
+            "anio": 2003,
+            "estado": "Alquilado",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "El Perfume",
+            "autor": "Patrick S\u00fcskind",
+            "genero": "Ficci\u00f3n Hist\u00f3rica",
+            "anio": 1985,
+            "estado": "Disponible",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "La Sombra del Viento",
+            "autor": "Carlos Ruiz Zaf\u00f3n",
+            "genero": "Misterio",
+            "anio": 2001,
+            "estado": "Disponible",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "La Casa de los Esp\u00edritus",
+            "autor": "Isabel Allende",
+            "genero": "Realismo M\u00e1gico",
+            "anio": 1982,
+            "estado": "Disponible",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "Ensayo sobre la Ceguera",
+            "autor": "Jos\u00e9 Saramago",
+            "genero": "Alegor\u00eda",
+            "anio": 1995,
+            "estado": "Alquilado",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "El Psicoanalista",
+            "autor": "John Katzenbach",
+            "genero": "Thriller Psicol\u00f3gico",
+            "anio": 2002,
+            "estado": "Disponible",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "El Nombre del Viento",
+            "autor": "Patrick Rothfuss",
+            "genero": "Fantas\u00eda \u00c9pica",
+            "anio": 2007,
+            "estado": "Disponible",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "Juego de Tronos",
+            "autor": "George R.R. Martin",
+            "genero": "Fantas\u00eda \u00c9pica",
+            "anio": 1996,
+            "estado": "Disponible",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "El \u00daltimo Deseo (Geralt de Rivia)",
+            "autor": "Andrzej Sapkowski",
+            "genero": "Fantas\u00eda",
+            "anio": 1993,
+            "estado": "Alquilado",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "Dune",
+            "autor": "Frank Herbert",
+            "genero": "Ciencia Ficci\u00f3n",
+            "anio": 1965,
+            "estado": "Disponible",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "Yo, Robot",
+            "autor": "Isaac Asimov",
+            "genero": "Ciencia Ficci\u00f3n",
+            "anio": 1950,
+            "estado": "Disponible",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "Fundaci\u00f3n",
+            "autor": "Isaac Asimov",
+            "genero": "Ciencia Ficci\u00f3n",
+            "anio": 1951,
+            "estado": "Disponible",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "Neuromante",
+            "autor": "William Gibson",
+            "genero": "Cyberpunk",
+            "anio": 1984,
+            "estado": "Alquilado",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "El Resplandor",
+            "autor": "Stephen King",
+            "genero": "Terror",
+            "anio": 1977,
+            "estado": "Disponible",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "La Chica del Tren",
+            "autor": "Paula Hawkins",
+            "genero": "Misterio",
+            "anio": 2015,
+            "estado": "Disponible",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "Perdida",
+            "autor": "Gillian Flynn",
+            "genero": "Thriller",
+            "anio": 2012,
+            "estado": "Disponible",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "El Silencio de los Corderos",
+            "autor": "Thomas Harris",
+            "genero": "Thriller",
+            "anio": 1988,
+            "estado": "Alquilado",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "El Alquimista",
+            "autor": "Paulo Coelho",
+            "genero": "Ficci\u00f3n",
+            "anio": 1988,
+            "estado": "Disponible",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "El Guardi\u00e1n entre el Centeno",
+            "autor": "J.D. Salinger",
+            "genero": "Ficci\u00f3n Juvenil",
+            "anio": 1951,
+            "estado": "Disponible",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "Sapiens: De animales a dioses",
+            "autor": "Yuval Noah Harari",
+            "genero": "No Ficci\u00f3n",
+            "anio": 2011,
+            "estado": "Disponible",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "Una Breve Historia del Tiempo",
+            "autor": "Stephen Hawking",
+            "genero": "Ciencia",
+            "anio": 1988,
+            "estado": "Alquilado",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "Cosmos",
+            "autor": "Carl Sagan",
+            "genero": "Ciencia",
+            "anio": 1980,
+            "estado": "Disponible",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "La Carretera",
+            "autor": "Cormac McCarthy",
+            "genero": "Post-apocal\u00edptica",
+            "anio": 2006,
+            "estado": "Disponible",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "Meridiano de Sangre",
+            "autor": "Cormac McCarthy",
+            "genero": "Western",
+            "anio": 1985,
+            "estado": "Disponible",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "Poeta en Nueva York",
+            "autor": "Federico Garc\u00eda Lorca",
+            "genero": "Poes\u00eda",
+            "anio": 1940,
+            "estado": "Alquilado",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "2666",
+            "autor": "Roberto Bola\u00f1o",
+            "genero": "Novela",
+            "anio": 2004,
+            "estado": "Disponible",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "Los Detectives Salvajes",
+            "autor": "Roberto Bola\u00f1o",
+            "genero": "Novela",
+            "anio": 1998,
+            "estado": "Disponible",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "Veinte Poemas de Amor",
+            "autor": "Pablo Neruda",
+            "genero": "Poes\u00eda",
+            "anio": 1924,
+            "estado": "Disponible",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "El Laberinto de la Soledad",
+            "autor": "Octavio Paz",
+            "genero": "Ensayo",
+            "anio": 1950,
+            "estado": "Disponible",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "Pedro P\u00e1ramo",
+            "autor": "Juan Rulfo",
+            "genero": "Realismo M\u00e1gico",
+            "anio": 1955,
+            "estado": "Alquilado",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "Ficciones",
+            "autor": "Jorge Luis Borges",
+            "genero": "Cuentos",
+            "anio": 1944,
+            "estado": "Disponible",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "El Aleph",
+            "autor": "Jorge Luis Borges",
+            "genero": "Cuentos",
+            "anio": 1949,
+            "estado": "Disponible",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "Historias de Cronopios y de Famas",
+            "autor": "Julio Cort\u00e1zar",
+            "genero": "Cuentos Cortos",
+            "anio": 1962,
+            "estado": "Disponible",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "La Tregua",
+            "autor": "Mario Benedetti",
+            "genero": "Novela",
+            "anio": 1960,
+            "estado": "Alquilado",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "El T\u00fanel",
+            "autor": "Ernesto S\u00e1bato",
+            "genero": "Novela Psicol\u00f3gica",
+            "anio": 1948,
+            "estado": "Disponible",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "El Proceso",
+            "autor": "Franz Kafka",
+            "genero": "Absurdo",
+            "anio": 1925,
+            "estado": "Disponible",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "El Castillo",
+            "autor": "Franz Kafka",
+            "genero": "Absurdo",
+            "anio": 1926,
+            "estado": "Disponible",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "Bodas de Sangre",
+            "autor": "Federico Garc\u00eda Lorca",
+            "genero": "Teatro",
+            "anio": 1933,
+            "estado": "Alquilado",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "La Odisea",
+            "autor": "Homero",
+            "genero": "\u00c9pica",
+            "anio": -800,
+            "estado": "Disponible",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "La Il\u00edada",
+            "autor": "Homero",
+            "genero": "\u00c9pica",
+            "anio": -800,
+            "estado": "Disponible",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "Ant\u00edgona",
+            "autor": "S\u00f3focles",
+            "genero": "Tragedia Griega",
+            "anio": -441,
+            "estado": "Disponible",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "Edipo Rey",
+            "autor": "S\u00f3focles",
+            "genero": "Tragedia Griega",
+            "anio": -429,
+            "estado": "Alquilado",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "Meditaciones",
+            "autor": "Marco Aurelio",
+            "genero": "Filosof\u00eda",
+            "anio": 180,
+            "estado": "Disponible",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "El Arte de la Guerra",
+            "autor": "Sun Tzu",
+            "genero": "Estrategia",
+            "anio": -500,
+            "estado": "Disponible",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "La Divina Comedia",
+            "autor": "Dante Alighieri",
+            "genero": "Poes\u00eda \u00c9pica",
+            "anio": 1320,
+            "estado": "Disponible",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "Decamer\u00f3n",
+            "autor": "Giovanni Boccaccio",
+            "genero": "Cuentos",
+            "anio": 1353,
+            "estado": "Alquilado",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "El Pr\u00edncipe",
+            "autor": "Nicol\u00e1s Maquiavelo",
+            "genero": "Ensayo Pol\u00edtico",
+            "anio": 1532,
+            "estado": "Disponible",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "Utop\u00eda",
+            "autor": "Tom\u00e1s Moro",
+            "genero": "Filosof\u00eda",
+            "anio": 1516,
+            "estado": "Disponible",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "Los Viajes de Gulliver",
+            "autor": "Jonathan Swift",
+            "genero": "S\u00e1tira",
+            "anio": 1726,
+            "estado": "Disponible",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "Sentido y Sensibilidad",
+            "autor": "Jane Austen",
+            "genero": "Romance Cl\u00e1sico",
+            "anio": 1811,
+            "estado": "Disponible",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "Ivanhoe",
+            "autor": "Walter Scott",
+            "genero": "Novela Hist\u00f3rica",
+            "anio": 1819,
+            "estado": "Alquilado",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "Mujercitas",
+            "autor": "Louisa May Alcott",
+            "genero": "Juvenil",
+            "anio": 1868,
+            "estado": "Disponible",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "Anna Karenina",
+            "autor": "Le\u00f3n Tolst\u00f3i",
+            "genero": "Realismo",
+            "anio": 1877,
+            "estado": "Disponible",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "La Guerra de los Mundos",
+            "autor": "H. G. Wells",
+            "genero": "Ciencia Ficci\u00f3n",
+            "anio": 1898,
+            "estado": "Disponible",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "El Llamado de lo Salvaje",
+            "autor": "Jack London",
+            "genero": "Aventura",
+            "anio": 1903,
+            "estado": "Alquilado",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "El Jard\u00edn Secreto",
+            "autor": "Frances Hodgson Burnett",
+            "genero": "Juvenil",
+            "anio": 1911,
+            "estado": "Disponible",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "Peter Pan",
+            "autor": "J. M. Barrie",
+            "genero": "Fantas\u00eda Juvenil",
+            "anio": 1911,
+            "estado": "Alquilado",
+            "veces_alquilado": 3
+        },
+        {
+            "titulo": "Tarz\u00e1n de los Monos",
+            "autor": "Edgar Rice Burroughs",
+            "genero": "Aventura",
+            "anio": 1912,
+            "estado": "Disponible",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "El Castillo de Otranto",
+            "autor": "Horace Walpole",
+            "genero": "Novela G\u00f3tica",
+            "anio": 1764,
+            "estado": "Disponible",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "Las Flores del Mal",
+            "autor": "Charles Baudelaire",
+            "genero": "Poes\u00eda",
+            "anio": 1857,
+            "estado": "Alquilado",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "Rimas y Leyendas",
+            "autor": "Gustavo Adolfo B\u00e9cquer",
+            "genero": "Poes\u00eda Rom\u00e1ntica",
+            "anio": 1871,
+            "estado": "Disponible",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "La Regenta",
+            "autor": "Leopoldo Alas Clar\u00edn",
+            "genero": "Realismo",
+            "anio": 1884,
+            "estado": "Disponible",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "Fortunata y Jacinta",
+            "autor": "Benito P\u00e9rez Gald\u00f3s",
+            "genero": "Realismo",
+            "anio": 1887,
+            "estado": "Disponible",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "Niebla",
+            "autor": "Miguel de Unamuno",
+            "genero": "Novela",
+            "anio": 1914,
+            "estado": "Disponible",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "Platero y Yo",
+            "autor": "Juan Ram\u00f3n Jim\u00e9nez",
+            "genero": "Prosa L\u00edrica",
+            "anio": 1914,
+            "estado": "Alquilado",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "El \u00c1rbol de la Ciencia",
+            "autor": "P\u00edo Baroja",
+            "genero": "Novela",
+            "anio": 1911,
+            "estado": "Disponible",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "Tirano Banderas",
+            "autor": "Ram\u00f3n del Valle-Incl\u00e1n",
+            "genero": "Esperpento",
+            "anio": 1926,
+            "estado": "Disponible",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "La Peste",
+            "autor": "Albert Camus",
+            "genero": "Existencialismo",
+            "anio": 1947,
+            "estado": "Disponible",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "El Extranjero",
+            "autor": "Albert Camus",
+            "genero": "Existencialismo",
+            "anio": 1942,
+            "estado": "Disponible",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "El Genio Maligno",
+            "autor": "Ren\u00e9 Descartes",
+            "genero": "Filosof\u00eda",
+            "anio": 1641,
+            "estado": "Alquilado",
+            "veces_alquilado": 0
+        },
+        {
+            "titulo": "harry potter",
+            "autor": "eowling",
+            "genero": "ficcion",
+            "anio": 2000,
+            "estado": "Disponible",
+            "veces_alquilado": 0
+        }
+    ],
+    "socios": [
+        {
+            "Nombre": "tomas",
+            "DNI": "46646207"
+        }
+    ],
+    "historial": []
+}
