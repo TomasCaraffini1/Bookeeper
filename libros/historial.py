@@ -6,13 +6,13 @@ def registrar_prestamo(historial, dni, titulo):
         "DNI": dni,
         "Libro": titulo,
         "Fecha": fecha,
-        "Estado": "Activo"
+        "estado": "Activo"
     })
 
 def registrar_devolucion(historial, dni, titulo):
     for h in historial:
-        if h["DNI"] == dni and h["Libro"] == titulo and h["Estado"] == "Activo":
-            h["Estado"] = "Devuelto"
+        if h["DNI"] == dni and h["Libro"] == titulo and h["estado"] == "Activo":
+            h["estado"] = "Devuelto"
             h["Fecha_devolucion"] = str(datetime.now()).split('.')[0]
             return
     print("⚠️ No se encontró un préstamo activo para ese socio y libro.")
@@ -23,7 +23,7 @@ def mostrar_historial(historial):
         return
     print("\n=== Historial de préstamos ===")
     for h in historial:
-        estado = h["Estado"]
+        estado = h["estado"]
         print(f"- {h['Libro']} | DNI {h['DNI']} | {estado} | {h['Fecha']}")
     print()
 
@@ -56,7 +56,7 @@ def mostrar_historial_por_socio(historial, socios):
         return
 
     for m in movimientos:
-        print(f"- {m['Fecha']} | {m['Estado']} | {m['Libro']}")
+        print(f"- {m['Fecha']} | {m['estado']} | {m['Libro']}")
 
     print()
 
@@ -71,13 +71,13 @@ def mostrar_historial_libros(historial, libros):
     titulo = input("Ingrese el título del libro: ").strip()
 
     # validar que exista
-    libro = next((l for l in libros if l['Título'].lower() == titulo.lower()), None)
+    libro = next((l for l in libros if l['titulo'].lower() == titulo.lower()), None)
 
     if not libro:
         print("❌ No existe un libro con ese título.")
         return
 
-    print(f"\n📖 Movimientos del libro: {libro['Título']}\n")
+    print(f"\n📖 Movimientos del libro: {libro['titulo']}\n")
     print(f"Veces alquilado: {libro.get('veces_alquilado', 0)}\n")
 
     movimientos = [m for m in historial if m['Libro'].lower() == titulo.lower()]
@@ -87,7 +87,7 @@ def mostrar_historial_libros(historial, libros):
         return
 
     for m in movimientos:
-        print(f"- {m.get('Fecha', '---')} | {m.get('Estado', '---')} | DNI: {m.get('DNI', '---')}")
+        print(f"- {m.get('Fecha', '---')} | {m.get('estado', '---')} | DNI: {m.get('DNI', '---')}")
 
 
     print()

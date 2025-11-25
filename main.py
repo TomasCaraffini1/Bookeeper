@@ -1,13 +1,39 @@
-import json
 import os
+import json
 from libros.alta import alta_libro
-from libros.lista import listar_libros
-from libros.busca import buscar_libro
 from libros.alquiler import prestar_libro, devolver_libro
 from libros.socios import registrar_socio, listar_socios
 from libros.historial import mostrar_historial
 from libros.historial import mostrar_historial_por_socio
 from libros.historial import mostrar_historial_libros
+from libros.busca import buscar_libro, mostrar_disponibles
+from libros.lista import listar_libros, mostrar_resumen_libros
+
+
+def limpiar_consola():
+    """
+    Limpia la consola realizando un salto grande de líneas.
+
+    Nota:
+        Debido a que el programa funciona en múltiples entornos
+        (Sistemas Operartivos / IDEs), esta técnica evita depender de
+        comandos específicos del sistema operativo.
+
+    """
+    
+    print("\n" * 100)
+
+def pausar():
+    """
+    Pausa la ejecución hasta que el usuario presione ENTER.
+
+    Después de confirmar, limpia la consola para mantener
+    una interfaz ordenada entre cada operación.
+
+    """
+    
+    input("\n👉 Presione ENTER para continuar... ✨")
+    limpiar_consola()
 
 def cargar_datos(archivo="datos.json"):
     """
@@ -48,22 +74,29 @@ def cargar_datos(archivo="datos.json"):
 
 
 
+
 def guardar_datos(libros, archivo="datos.json"):
     """
-    Guarda la lista de libros (que está en Python) en el archivo JSON.
+    Guarda la lista de libros en un archivo JSON.
+
+    Argumentos:
+        libros (list[dict]): Lista completa de libros.
+        archivo (str): Nombre del archivo destino.
+
     """
     try:
         with open(archivo, 'w', encoding='utf-8') as f:
             # json.dump() convierte la lista de Python a formato JSON y la escribe
             # indent=4 hace que el archivo JSON sea legible
-            json.dump(libros, f, indent=4) 
+            json.dump(libros, f, indent=4)
         print(f"✅ Datos guardados exitosamente en '{archivo}'.")
     except Exception as e:
-        print(f"❌ Error al guardar los datos en '{archivo}': {e}")  
+        print(f"❌ Error al guardar los datos en '{archivo}': {e}")
+
 
 def mostrar_menu():
     print("========================================")
-    print("📚 SISTEMA DE GESTIÓN DE BIBLIOTECA")
+    print("📚BOOKEEPER")
     print("========================================")
     print("1. Alta de libro")
     print("2. Listar libros")
@@ -75,23 +108,45 @@ def mostrar_menu():
     print("8. Ver historial de préstamos (general)")
     print("9. Ver historial por socio")
     print("10. Ver historial por libro")
+    print("11. Ver libros disponibles")
+    print("12. Ver resumen de libros")
     print("0. Salir")
     print("========================================")
 
 
 # lee y valida la opcion del usuario, retorna opcion valida entre 1 y 6
 def elegir_opcion():
+    """
+    Solicita y valida que el usuario elija una opción del menú principal.
+
+    Acepta únicamente números enteros entre 1 y 12.
+
+    Devuelve:
+        int: Opción seleccionada.
+
+    """
     while True:
         try:
-            opcion = int(input("Seleccione una opción (0-10): "))
-            if 0 <= opcion <= 10:
+            opcion = int(input("Seleccione una opción (0-12): "))
+            if 0 <= opcion <= 12:
                 return opcion
             else:
-                print("❌ Error: Ingrese un número entre 0 y 10.")
+                print("❌ Error: Ingrese un número entre 0 y 12.")
         except ValueError:
             print("❌ Error: Por favor ingrese un número entero.")
 
+
 def main():
+    """
+    Función principal del programa.
+
+    Flujo:
+        1. Carga los datos desde el archivo.
+        2. Muestra el menú principal.
+        3. Ejecuta la acción elegida.
+        4. Guarda los datos al salir.
+        
+    """
     datos = cargar_datos("datos.json")
     libros = datos.get("libros", [])
     socios = datos.get("socios", [])
@@ -115,24 +170,40 @@ def main():
 
         if opcion == 1:
             alta_libro(libros)
+            pausar()
         elif opcion == 2:
             listar_libros(libros)
+            pausar()
         elif opcion == 3:
             buscar_libro(libros)
+            pausar()
         elif opcion == 4:
             prestar_libro(libros, socios, historial)
+            pausar()
         elif opcion == 5:
             devolver_libro(libros, socios, historial)
+            pausar()
+        elif opcion == 11:
+            mostrar_disponibles(libros)
+            pausar()
+        elif opcion == 12:
+            mostrar_resumen_libros(libros)
+            pausar()
         elif opcion == 6:
             registrar_socio(socios)
+            pausar()
         elif opcion == 7:
             listar_socios(socios)
+            pausar()
         elif opcion == 8:
             mostrar_historial(historial)
+            pausar()
         elif opcion == 9:
             mostrar_historial_por_socio(historial, socios)
+            pausar()
         elif opcion == 10:
             mostrar_historial_libros(historial, libros)
+            pausar()
         elif opcion == 0:
             guardar_datos({"libros": libros, "socios": socios, "historial": historial}, "datos.json")
             print("\nGracias por utilizar Bookeeper!👋\n")
