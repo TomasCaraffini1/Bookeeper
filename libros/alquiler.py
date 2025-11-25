@@ -3,7 +3,16 @@ from .busca import pedir_y_filtrar   # Reutiliza la logica de busqueda
 from .historial import registrar_prestamo, registrar_devolucion
 
 def listar_coincidencias(resultados):
-    # Muestra por pantalla la lista de coincidencias con un índice al inicio
+    """
+    Muestra una tabla con los libros que coincidieron con la búsqueda.
+
+    La tabla incluye un índice numérico para permitir la selección posterior
+    por parte del usuario.
+
+    Argumentos:
+        resultados (list[dict]): Lista de libros que cumplen con el criterio de búsqueda.
+
+    """
 
     if not resultados:
         print("\nNo hay coincidencias. ❌")
@@ -46,7 +55,18 @@ def listar_coincidencias(resultados):
 
 
 def elegir_de_lista(resultados):
-# Muestra las posibles coincidencias
+    """
+    Permite al usuario seleccionar un libro de una lista de coincidencias.
+
+    Si solo existe una coincidencia, se selecciona automáticamente.
+    Si el usuario ingresa 0, se cancela la operación y se retorna None.
+
+    Argumentos:
+        resultados (list[dict]): Lista de libros coincidentes.
+
+    Devuelve:
+        int | None: Índice (0-based) del libro seleccionado, o None si se cancela. 
+    """
     print("\nCoincidencias encontradas:")
     print("--------------------------")
     listar_coincidencias(resultados)
@@ -80,6 +100,16 @@ def elegir_de_lista(resultados):
 
 # Funciones específicas
 def prestar_libro(biblioteca, socios, historial):
+    """
+    Realiza el préstamo de un libro, cambiando su estado a "Alquilado".
+
+    El usuario primero realiza una búsqueda, luego selecciona un libro
+    y, si está disponible, se actualiza su estado.
+
+    Argumentos:
+        biblioteca (list[dict]): Lista completa de libros cargados.
+
+    """
     if not biblioteca:
         print("\nNo hay libros cargados.")
         return
@@ -124,6 +154,13 @@ def prestar_libro(biblioteca, socios, historial):
 
 
 def devolver_libro(biblioteca, socios, historial):
+    """
+    Registra la devolución de un libro, cambiando su estado a "Disponible".
+
+    Argumentos:
+        biblioteca (list[dict]): Lista completa de libros cargados.
+
+    """
     if not biblioteca:
         print("\nNo hay libros cargados.")
         return

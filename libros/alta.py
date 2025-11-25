@@ -10,7 +10,22 @@ RX_ANIO     = re.compile(r"^\d{1,4}$")                           # 1-4 dígitos 
 
 
 def ingresar(msj, normalizar, validar, transformar, error_msj="Valor inválido."):
-    # Bucle generico de entrada, normaliza, valida y transforma en caso de ser necesario
+    """
+    Captura y valida entrada del usuario de manera genérica.
+
+    Aplica normalización, validación y transformación según los parámetros
+    enviados. Es la base común para las funciones de ingreso de datos.
+
+    Argumentos:
+        msj (str): Mensaje mostrado al usuario.
+        normalizar (bool): Indica si debe aplicarse strip() al texto ingresado.
+        validar (callable | None): Función que valida el valor ingresado.
+        transformar (callable | None): Convierte el valor antes de retornarlo.
+        error_msj (str): Mensaje mostrado si la validación falla.
+
+    Devuelve:
+        Valor ingresado, validado y transformado.
+    """
     while True:
         valor = input(msj)
 
@@ -33,6 +48,12 @@ def ingresar(msj, normalizar, validar, transformar, error_msj="Valor inválido."
 
 # Funciones específicas
 def pedir_titulo():
+    """
+    Solicita el título del libro y valida su formato.
+
+    Devuelve:
+        str: Título ingresado.
+    """
     print("\n")
     return ingresar(
         "🔍 Título Del Libro: ",
@@ -44,6 +65,12 @@ def pedir_titulo():
 
 
 def pedir_autor():
+    """
+    Solicita el autor del libro y valida su formato.
+
+    Devuelve:
+        str: Autor ingresado.
+    """
     return ingresar(
         "✍️  Autor Del Libro: ",
         normalizar=True,
@@ -54,6 +81,12 @@ def pedir_autor():
 
 
 def pedir_genero():
+    """
+    Solicita el género literario del libro.
+
+    Devuelve:
+        str: Género ingresado.
+    """
     return ingresar(
         "🧩 Género Literario: ",
         normalizar=True,
@@ -64,6 +97,13 @@ def pedir_genero():
 
 
 def pedir_anio_dc():
+    """
+    Solicita el año de publicación (solo Años D.C.).
+    Valida que el valor ingresado sea un número entre 1 y el año actual.
+
+    Devuelve:
+        int: Año de publicación.
+    """
     anio_actual = datetime.now().year
     def _validar(s: str) -> bool:
         if not RX_ANIO.match(s):
@@ -80,7 +120,17 @@ def pedir_anio_dc():
 
 
 def existe_duplicado(biblioteca, titulo, autor):
-    # Valida duplicados, devuelve un Booleano
+    """
+    Verifica si ya existe un libro registrado con mismo título y autor.
+
+    Argumentos:
+        biblioteca (list[dict]): Lista de libros existentes.
+        titulo (str): Título del libro.
+        autor (str): Autor del libro.
+
+    Devuelve:
+        bool: True si ya existe un duplicado, False en caso contrario.
+    """
 
     tittle = titulo.lower()
     author = autor.lower()
@@ -88,7 +138,21 @@ def existe_duplicado(biblioteca, titulo, autor):
 
 
 def alta_libro(biblioteca):
-    # Orquestador para la carga de libros
+    """
+    Registra un nuevo libro en la biblioteca.
+
+    Se solicita:
+        - Título
+        - Autor
+        - Género
+        - Año
+
+    Valida duplicados antes de agregarlo.
+
+    Argumentos:
+        biblioteca (list[dict]): Lista de libros cargados.
+
+    """
 
     Título = pedir_titulo()
     Autor  = pedir_autor()
